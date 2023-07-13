@@ -27,7 +27,7 @@ Route::get('/', function () {
 
 Route::get('/clientes',[ClienteController::class,'index'])->name("clientes");
 Route::get("/registroclientes",[RegistroCliente::class,'index'])->name('registroClientes');
-Route::post("/regsitroC",[RegistroClientes::class,'store']);
+Route::post("/regsitroC",[RegistroCliente::class,'store']);
 
 //Ruta para mostrar la vista de login
 Route::get('/login',[LoginController::class,'index'])->name("login");
