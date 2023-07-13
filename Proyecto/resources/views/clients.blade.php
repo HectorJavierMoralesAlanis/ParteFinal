@@ -6,23 +6,7 @@
 
 @section('contenido')
     <body class="row staff-grid-row">
-        <div class="sidebar p-5" id="sidebar">
-            <div class="bg-white rounded-lg shadow p-6 align-top">
-                <div id="sidebar-menu" class="sidebar-menu">
-                    <ul>
-                        <li class="submenu">
-                            <ul class="">
-                                <li><a href="#" class="font-light"> Admin Dashboard</a></li>
-                                <li><a href="{{ route('colaboradores') }}" class="font-light"> Colaborador Dashboard</a></li>
-                                <li><a href="{{ route('proyectos') }}" class="font-light"> Proyectos</a></li>
-                                <li><a href="{{ route('clientes') }}" class="font-light"> Clientes</a></li>
 
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
         <div class="mb-5">
             <label for="name" class="mb-2 block uppercase text-gray-500 font-bold p-4">
             Nombre del cliente
