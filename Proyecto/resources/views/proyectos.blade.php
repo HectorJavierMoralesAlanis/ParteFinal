@@ -15,7 +15,7 @@
                                 <li><a href="#" class="font-light"> Admin Dashboard</a></li>
                                 <li><a href="{{ route('colaboradores') }}" class="font-light"> Colaborador Dashboard</a></li>
                                 <li><a href="{{ route('proyectos') }}" class="font-light"> Proyectos</a></li>
-                                <li><a href="{{ route('clients') }}" class="font-light"> Clientes</a></li>
+                                <li><a href="{{ route('clientes') }}" class="font-light"> Clientes</a></li>
 
                             </ul>
                         </li>
