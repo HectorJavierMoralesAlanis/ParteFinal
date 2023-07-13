@@ -6,6 +6,8 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegistroCliente;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\proyectosController;
+use App\Http\Controllers\CrearProyectoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +38,9 @@ Route::post('/register',[RegisterController::class,'store']);
 
 //Ruta para mostrar el dashboard
 Route::get('/dashboard',[PostController::class,'index'])->name('post.index');
+
+Route::get('/proyectos', [proyectosController::class, 'index'])->name('proyectos');
+Route::get('/crearproyecto', [CrearProyectoController::class, 'index'])->name('crearproyecto');
+Route::post('/crearproyecto',[CrearProyectoController::class, 'store']);
+
+Route::get('/colaboradores', [colaboradoresController::class, 'index'])->name('colaboradores');
