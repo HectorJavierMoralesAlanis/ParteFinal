@@ -7,6 +7,7 @@ use App\Http\Controllers\RegistroCliente;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\proyectosController;
+use App\Http\Controllers\colaboradoresController;
 use App\Http\Controllers\CrearProyectoController;
 
 /*
