@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('clientes', function (Blueprint $table) {
             $table->id();
+            $table->string('nombreC');
+            $table->string('apellidoC');
+            $table->string('emailC')->unique();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('passwordC');
+            $table->string('repasswordC');
+            $table->string('telefonoC');
+            $table->string('compNombreC');
+            $table->rememberToken();
             $table->timestamps();
         });
     }

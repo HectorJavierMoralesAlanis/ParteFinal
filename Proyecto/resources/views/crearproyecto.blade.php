@@ -31,30 +31,80 @@
             </div>
 
             <div class="mb-5">
+                <label for="nombrecliente" class="mb-2 block uppercase text-gray-500 font-bold">
+                Ingresa el nombre del cliente:
+                </label>
+                <input 
+                    id="nombrecliente"
+                    name="nombrecliente"
+                    type="text"
+                    placeholder="Nombre del cliente"
+                    class="border p-3 w-full rounded-lg"
+                />
+
+            </div>
+
+            <div class="mb-5">
                 <label for="descripcionproyecto" class="mb-2 block uppercase text-gray-500 font-bold">
                 Ingresa la descripcion del proyecto:
                 </label>
-                <textarea 
+                <textarea
                     id="descripcionproyecto"
                     name="descripcionproyecto"
-                    type="text"
-                    placeholder="Descripcion del proyecto"
-                    class="border p-3 w-full rounded-lg "
-                >
+                    type="text" 
+                    placeholder="Descripcion del proyecto" 
+                    class="border p-3 w-full rounded-lg">
                 </textarea>
+
             </div>
             <div class="mb-5">
-                <label for="fechaterminado" class="mb-2 block uppercase text-gray-500 font-bold">
-                Ingrese la fecha de Deadline:
+                <label for="fechaempezado" class="mb-2 block uppercase text-gray-500 font-bold">
+                Ingrese la fecha Deadline:
                 </label>
                 <input 
-                    id="fechaterminado"
-                    name="fechaterminado"
+                    id="fechaempezado"
+                    name="fechaempezado"
                     type="text"
-                    placeholder="Fecha de finalizado"
+                    placeholder="Fecha de inicio"
                     class="border p-3 w-full rounded-lg "
                 />
+                <div class="mb-5">
+                    <label for="fechaterminado" class="mb-2 block uppercase text-gray-500 font-bold">
+                    </label>
+                    <input 
+                        id="fechaterminado"
+                        name="fechaterminado"
+                        type="text"
+                        placeholder="Fecha de finalizado"
+                        class="border p-3 w-full rounded-lg "
+                    />
             </div>
+
+            <div class="mb-5">
+                <label for="presupuesto" class="mb-2 block uppercase text-gray-500 font-bold">
+                Presupuesto:
+                </label>
+                <input 
+                    id="presupuesto"
+                    name="presupuesto"
+                    type="text"
+                    placeholder="$$$ presupuesto"
+                    class="border p-3 w-full rounded-lg"
+                />
+            </div>
+            <div class="mb-5">
+                <label for="prioridad" class="mb-2 block uppercase text-gray-500 font-bold">
+                Prioridad:
+                </label>
+                <input 
+                    id="prioridad"
+                    name="prioridad"
+                    type="text"
+                    placeholder="Prioridad: Alta-Media-Baja"
+                    class="border p-3 w-full rounded-lg"
+                />
+            </div>
+
             <div class="mb-5">
                 <label for="liderproyecto" class="mb-2 block uppercase text-gray-500 font-bold">
                 Ingrese el nombre del lider del proyecto:
@@ -67,6 +117,21 @@
                     class="border p-3 w-full rounded-lg"
                 />
             </div>
+
+            <div class="mb-5">
+                <label for="nombreteam" class="mb-2 block uppercase text-gray-500 font-bold">
+                Ingrese el nombre del team a trabajar:
+                </label>
+                <input 
+                    id="nombreteam"
+                    name="nombreteam"
+                    type="text"
+                    placeholder="Nombre del team a trabajar"
+                    class="border p-3 w-full rounded-lg"
+                />
+            </div>
+
+
             <div class="md:w-1/2 px-10">
 
                 <form action="#"  enctype="multipart/form-data" id="dropzone" 

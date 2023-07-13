@@ -11,8 +11,13 @@ class proyectos extends Model
 
     protected $fillable=[
         'nombreproyecto',
+        'nombrecliente',
         'descripcionproyecto',
+        'fechaempezado',
         'fechaterminado',
-        'liderproyecto'
+        'presupuesto',
+        'prioridad',
+        'liderproyecto',
+        'nombreteam'
     ];
 }
