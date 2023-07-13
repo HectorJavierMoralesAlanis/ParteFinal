@@ -1,10 +1,11 @@
 <?php
 
-use Illuminate\auth\Events\Login;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegistroCliente;
+use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\clientsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,13 +18,21 @@ use App\Http\Controllers\clientsController;
 |
 */
 
+Route::get('/', function () {
+    return view('loginInicio');
+});
 
-Route::get('/', [LoginController::class, 'index'])->name('login');
+Route::get('/clientes',[ClienteController::class,'index'])->name("clientes");
+Route::get("/registroclientes",[RegistroCliente::class,'index'])->name('registroClientes');
 
-Route::get('/register', [RegisterController::class, 'index'])->name('register');
-Route::post('/register', [RegisterController::class, 'store']);
+//Ruta para mostrar la vista de login
+Route::get('/login',[LoginController::class,'index'])->name("login");
 
-Route::get('/login', [LoginController::class, 'index'])->name('login');
-Route::post('/login', [LoginController::class, 'store']);
+//Ruta para mostrar la vista de register
+Route::get('/register',[RegisterController::class,'index'])->name('register');
 
-Route::get('/clients', [clientsController::class, 'index'])->name('clients');
+//Ruta para almacenar los usuarios 
+Route::post('/register',[RegisterController::class,'store']);
+
+//Ruta para mostrar el dashboard
+Route::get('/dashboard',[PostController::class,'index'])->name('post.index');
