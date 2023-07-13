@@ -8,7 +8,7 @@ class LoginController extends Controller
 {
     //
     public function index(){
-        return view('auth.loginInicio');
+        return view('loginInicio');
     }
 
     public function store(){
