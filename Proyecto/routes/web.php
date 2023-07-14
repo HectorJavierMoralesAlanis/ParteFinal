@@ -27,7 +27,9 @@ Route::get('/', function () {
     return view('loginInicio');
 });
 
-Route::get('/dashboard',[DashboardController::class,'index'])->name("dashboard");
+Route::get('/dashboard',function(){
+    return view('dashboardAdmin');
+})->name("dashboard");
 
 Route::get('/clientes',[ClienteController::class,'index'])->name("clientes");
 
