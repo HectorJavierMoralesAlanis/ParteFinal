@@ -100,21 +100,21 @@
                 </div>
 
                 <div class="mb-5">
-                    <label for="password" class="mb-2 black uppercase text-gray-500 font-bold">
+                    <label for="passwordC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Password del cliente
                     </label>
                     <input
-                        id="password"
-                        name="password"
+                        id="passwordC"
+                        name="passwordC"
                         type="text"
                         placeholder="Ingrese el password del cliente"
                         class="border p-2 w-full rounded tg
                         @error('passwordC')
                             border-red-500
                         @enderror"
-                        value="{{old('password')}}"
+                        value="{{old('passwordC')}}"
                     >
-                    @error('password')
+                    @error('passwordC')
                         <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">
                             {{$message}}
                         </p>
@@ -122,21 +122,21 @@
                 </div>
 
                 <div class="mb-5">
-                    <label for="password_confirmation" class="mb-2 black uppercase text-gray-500 font-bold">
+                    <label for="repasswordC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Confirme la password del cliente
                     </label>
                     <input
-                        id="password_confirmation"
-                        name="password_confirmation"
+                        id="repasswordC"
+                        name="repasswordC"
                         type="text"
                         placeholder="Reingrese el password del cliente"
                         class="border p-2 w-full rounded tg
-                        @error('password_confirmation')
+                        @error('repasswordC')
                             border-red-500
                         @enderror"
-                        value="{{old('password_confirmation')}}"
+                        value="{{old('repasswordC')}}"
                     >
-                    @error('password_confirmation')
+                    @error('repasswordC')
                         <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">
                             {{$message}}
                         </p>
