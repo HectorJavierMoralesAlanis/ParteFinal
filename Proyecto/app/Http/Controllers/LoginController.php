@@ -26,6 +26,6 @@ class LoginController extends Controller
         }
 
         //Credenciales correctas
-        return redirect()->route('loginInicio');
+        return view('loginInicio');
     }
 }
