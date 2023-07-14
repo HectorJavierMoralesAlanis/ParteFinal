@@ -15,8 +15,7 @@ class RegistroCliente extends Controller
     }
 
     public function store(Request $request){
-        dd('entro');
-        /*
+        
         $request->request->add(['username'=>Str::slug($request->username)]);
 
         //validar campos de formulario 
@@ -40,7 +39,7 @@ class RegistroCliente extends Controller
             'telefonoC'=>$request->telefonoC,
             'compNombreC'=>$request->compNombreC,
         ]);
-        dd('yeah baby');*/
+        dd('yeah baby');
         //return view('auth.clientes');
     }
 }
