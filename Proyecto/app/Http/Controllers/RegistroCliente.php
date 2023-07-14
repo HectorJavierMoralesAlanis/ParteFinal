@@ -41,6 +41,7 @@ class RegistroCliente extends Controller
             'compNombreC'=>$request->compNombreC,
         ]);
         
+        
         return redirect()->route('auth.clientes');
     }
 }
