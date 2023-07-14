@@ -7,8 +7,10 @@
 @section('contenido')
     <div class="md:flex md:justify-center md:gap=10 md:items-center">
         <div class="md:w-4/12 bg-neutral-800 p-6 rounded-lg shadow-xl">
-            <form method="POST" action='{{route('registroClientes')}}' novalidate>
+            <form method="POST" action='{{route('guardaclientes')}}' novalidate>
+
                 @csrf
+
                 <div class="mb-5">
                     <label for="nombreC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Nombre del cliente
@@ -30,6 +32,7 @@
                         </p>
                     @enderror
                 </div>
+
                 <div class="mb-5">
                     <label for="apellidoC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Apellido del cliente
@@ -51,6 +54,7 @@
                         </p>
                     @enderror
                 </div>
+
                 <div class="mb-5">
                     <label for="usernameC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Username del cliente
@@ -72,6 +76,7 @@
                         </p>
                     @enderror
                 </div>
+
                 <div class="mb-5">
                     <label for="emailC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Email del cliente
@@ -93,6 +98,7 @@
                         </p>
                     @enderror
                 </div>
+
                 <div class="mb-5">
                     <label for="passwordC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Password del cliente
@@ -114,6 +120,7 @@
                         </p>
                     @enderror
                 </div>
+
                 <div class="mb-5">
                     <label for="repasswordC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Confirme la password del cliente
@@ -135,6 +142,7 @@
                         </p>
                     @enderror
                 </div>
+
                 <div class="mb-5">
                     <label for="telefonoC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Telefono del cliente
@@ -156,6 +164,7 @@
                         </p>
                     @enderror
                 </div>
+                
                 <div class="mb-5">
                     <label for="compNombreC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Nombre de la compañia del cliente
@@ -177,11 +186,13 @@
                         </p>
                     @enderror
                 </div>
+
                 <input
                     type="submit"
                     value="Crear cliente"
                     class="bg-green-600 hover:bg-gren-700 transition-colors cursor-pointer uppercase font-bold w-full p-3 text=white rounded-lg"
                 />
+
             </form>
         </div>
     </div>

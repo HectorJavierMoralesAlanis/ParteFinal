@@ -21,8 +21,8 @@ class RegistroCliente extends Controller
         $this->validate($request,[
             'nombreC'=>'required|max:40',
             'apellidoC'=>'required|max:40',
-            'usernameC'=>'required|max:40',
-            'emailC'=>'required|unique:users|email|max:60',
+            'usernameC'=>'required|unique:clientes|max:40',
+            'emailC'=>'required|unique:clientes|email|max:60',
             'passwordC'=>'required|confirmed|min:4',
             'repasswordC'=>'',
             'telefonoC'=>'required|min:10|max:13',
@@ -39,6 +39,7 @@ class RegistroCliente extends Controller
             'telefonoC'=>$request->telefonoC,
             'compNombreC'=>$request->compNombreC,
         ]);
-        return view('auth.clientesregistro');
+
+        return redirect()->route('auth.clientes');
     }
 }
