@@ -49,3 +49,7 @@ Route::post('/crearproyecto',[CrearProyectoController::class, 'store']);
 
 Route::get('/colaboradores', [colaboradoresController::class, 'index'])->name('colaboradores');
 Route::post('/crearcolaborador',[CrearColaboradorController::class, 'store']);
+
+Route::get('/crearcolaborador', [CrearColaboradorController::class, 'index'])->name('crearcolaborador');
+Route::post('/crearcolaborador',[CrearColaboradorController::class, 'store']);
+
