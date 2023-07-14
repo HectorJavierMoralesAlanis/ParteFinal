@@ -8,7 +8,7 @@
 @section('contenido')
 <div class="md:flex md:justify-center md:gap-10 md:items-center">
     <div class="md:w-4/12 bg-white p-6 rounded-lg shadow-xl">
-        <form action="{{ route('colaboradores')}}" method="POST" novalidate>
+        <form action="{{ route('crearcolaborador')}}" method="POST" novalidate>
             @csrf
             <div class="mb-5">
                 <label for="nombrecolaborador" class="mb-2 block uppercase text-gray-500 font-bold">
