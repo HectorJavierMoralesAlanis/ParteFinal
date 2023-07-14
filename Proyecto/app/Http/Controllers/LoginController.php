@@ -9,8 +9,8 @@ class LoginController extends Controller
 {
     //
     public function index(){
-        $colaboradores = DB::table('colaboradores');
-        return view('dashboardAdmin')->with('colaboradores',$colaboradores);
+        
+        return view('loginInicio');
     }
 
     //Metodo de validacion de formulario de laogin
