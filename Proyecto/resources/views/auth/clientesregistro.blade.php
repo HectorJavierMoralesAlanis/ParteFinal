@@ -131,7 +131,7 @@
                         type="text"
                         placeholder="Reingrese el password del cliente"
                         class="border p-2 w-full rounded tg
-                        @error('repasswordC')
+                        @error('password_confirmation')
                             border-red-500
                         @enderror"
                         value="{{old('password_confirmation')}}"
