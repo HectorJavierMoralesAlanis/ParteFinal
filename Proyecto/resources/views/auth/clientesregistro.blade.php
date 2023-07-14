@@ -104,9 +104,9 @@
                         Password del cliente
                     </label>
                     <input
-                        id="password"
+                        id="passwordC"
                         name="passwordC"
-                        type="passwordC"
+                        type="password"
                         placeholder="Ingrese el password del cliente"
                         class="border p-2 w-full rounded tg
                         @error('passwordC')
