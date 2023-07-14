@@ -5,13 +5,15 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
     //
     public function index(){
-        return view('auth.register');
+        $colaboradores = DB::table('colaboradores');
+        return view('dashboardAdmin')->with('colaboradores',$colaboradores);
     }
 
     //Creacion del metodo para almacenar usuarios
@@ -41,6 +43,7 @@ class RegisterController extends Controller
             'email' => $request->email,
             'password' =>$request->password           
         ]);
-        return redirect()->route('post.index');
+        $colaboradores = DB::table('colaboradores');
+        return view('dashboardAdmin')->with('colaboradores',$colaboradores);
     }
 }
