@@ -7,7 +7,7 @@
 @section('contenido')
     <div class="md:flex md:justify-center md:gap=10 md:items-center">
         <div class="md:w-4/12 bg-neutral-800 p-6 rounded-lg shadow-xl">
-            <form method="POST" action='{{'registroClientes'}}' novalidate>
+            <form method="POST" action='{{route('registroClientes')}}' novalidate>
                 @csrf
                 <div class="mb-5">
                     <label for="nombreC" class="mb-2 black uppercase text-gray-500 font-bold">
