@@ -29,6 +29,7 @@ class RegistroCliente extends Controller
             'compNombreC'=>'required|min:10',
         ]);
 
+        //Creacion Cliente
         Cliente::create([
             'nombreC'=>$request->nombreC,
             'apellidoC'=>$request->apellidoC,
