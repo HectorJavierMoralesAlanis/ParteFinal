@@ -40,6 +40,10 @@ class RegistroCliente extends Controller
             'compNombreC'=>$request->compNombreC,
         ]);
 
+        auth()->attempt([
+            'email'=>$request->email,
+            'passwordC'=>$request->passwordC
+        ]);
         return redirect()->route('auth.clientes');
     }
 }
