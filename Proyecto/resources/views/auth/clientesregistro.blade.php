@@ -106,7 +106,7 @@
                     <input
                         id="passwordC"
                         name="passwordC"
-                        type="text"
+                        type="password"
                         placeholder="Ingrese el password del cliente"
                         class="border p-2 w-full rounded tg
                         @error('passwordC')
@@ -128,7 +128,7 @@
                     <input
                         id="repasswordC"
                         name="repasswordC"
-                        type="text"
+                        type="password"
                         placeholder="Reingrese el password del cliente"
                         class="border p-2 w-full rounded tg
                         @error('repasswordC')
