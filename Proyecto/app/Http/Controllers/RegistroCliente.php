@@ -24,6 +24,7 @@ class RegistroCliente extends Controller
             'username'=>'required|unique:clientes|max:40',
             'emailC'=>'required|unique:clientes|email|max:60',
             'password'=>'required|confirmed|min:2',
+            'password_confirmation'=>'',
             'telefonoC'=>'required|min:10|max:13',
             'compNombreC'=>'required|min:10',
         ]);
