@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegistroCliente;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\proyectosController;
 use App\Http\Controllers\colaboradoresController;
 use App\Http\Controllers\CrearProyectoController;
@@ -25,6 +26,8 @@ use App\Http\Controllers\CrearColaboradorController;
 Route::get('/', function () {
     return view('loginInicio');
 });
+
+Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
 
 Route::get('/clientes',[ClienteController::class,'index'])->name("clientes");
 
