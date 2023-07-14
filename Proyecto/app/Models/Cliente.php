@@ -12,10 +12,10 @@ class Cliente extends Model
     protected $fillable = [
         'nombreC',
         'apellidoC',
-        'usernameC',
+        'username',
         'emailC',
         'password',
-        'password_confirmarion',
+        'password_confirmation',
         'telefonoC',
         'compNombreC',
     ];
