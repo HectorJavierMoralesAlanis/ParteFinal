@@ -33,8 +33,8 @@ class RegistroCliente extends Controller
             'apellidoC'=>$request->apellidoC,
             'username'=>$request->usernameC,
             'emailC'=>$request->emailC,
-            'password'=>Hash::make($request->passwordC),
-            'password_confirmation'=>$request->passwordC,
+            'password'=>Hash::make($request->password),
+            'password_confirmation'=>$request->password,
             'telefonoC'=>$request->telefonoC,
             'compNombreC'=>$request->compNombreC,
         ]);
