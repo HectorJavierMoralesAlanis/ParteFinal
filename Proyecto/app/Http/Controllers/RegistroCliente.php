@@ -38,7 +38,7 @@ class RegistroCliente extends Controller
             'telefonoC'=>$request->telefonoC,
             'compNombreC'=>$request->compNombreC,
         ]);
-        
-        return view('auth.clientes');
+        dd('yeah baby');
+        //return view('auth.clientes');
     }
 }
