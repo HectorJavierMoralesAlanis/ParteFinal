@@ -35,13 +35,13 @@ class RegistroCliente extends Controller
             'username'=>$request->usernameC,
             'emailC'=>$request->emailC,
             'password' => Hash::make($request->password),
-            'password_confirmarion' => $request->password,
+            'password_confirmation' => $request->password,
             'telefonoC'=>$request->telefonoC,
             'compNombreC'=>$request->compNombreC,
         ]);
         auth()->attempt([
             'email'=>$request->email,
-            'passwordC'=>$request->passwordC
+            'password'=>$request->password
         ]);
         return redirect()->route('auth.clientes');
     }

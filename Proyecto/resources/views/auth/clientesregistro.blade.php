@@ -122,21 +122,21 @@
                 </div>
 
                 <div class="mb-5">
-                    <label for="password_confirmarion" class="mb-2 black uppercase text-gray-500 font-bold">
+                    <label for="password_confirmation" class="mb-2 black uppercase text-gray-500 font-bold">
                         Confirme la password del cliente
                     </label>
                     <input
-                        id="password_confirmarion"
-                        name="password_confirmarion"
+                        id="password_confirmation"
+                        name="password_confirmation"
                         type="text"
                         placeholder="Reingrese el password del cliente"
                         class="border p-2 w-full rounded tg
                         @error('repasswordC')
                             border-red-500
                         @enderror"
-                        value="{{old('password_confirmarion')}}"
+                        value="{{old('password_confirmation')}}"
                     >
-                    @error('password_confirmarion')
+                    @error('password_confirmation')
                         <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">
                             {{$message}}
                         </p>
