@@ -17,5 +17,6 @@ class Cliente extends Model
         'passwordC',
         'telefonoC',
         'compNombreC',
+        
     ];
 }
