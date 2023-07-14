@@ -30,7 +30,7 @@ Route::get('/', function () {
 
 
 Route::get('/clientes',[ClienteController::class,'index'])->name("clientes");
-Route::get('/dashboard',[DashboardController::class,'index'])->name("dashboard");
+Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
 Route::get("/registroClientes",[RegistroCliente::class,'index'])->name('registroClientes');
 Route::post("/registroClientes",[RegistroCliente::class,'store']);
 
