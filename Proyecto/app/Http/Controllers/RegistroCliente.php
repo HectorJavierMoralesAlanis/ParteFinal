@@ -29,17 +29,19 @@ class RegistroCliente extends Controller
             'telefonoC'=>'required|min:10|max:13',
             'compNombreC'=>'required|min:10',
         ]);
+        dd('entro');
+        /*
         Cliente::create([
             'nombreC'=>$request->nombreC,
             'apellidoC'=>$request->apellidoC,
             'username'=>$request->usernameC,
             'emailC'=>$request->emailC,
-            'password'=>$request->password,
+            'password'=>Hash::make($request->password),
             'password_confirmation'=>$request->password,
             'telefonoC'=>$request->telefonoC,
             'compNombreC'=>$request->compNombreC,
         ]);
-        dd('yeah baby');
+        dd('yeah baby');*/
         //return view('auth.clientes');
     }
 }
