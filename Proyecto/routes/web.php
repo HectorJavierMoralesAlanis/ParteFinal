@@ -29,7 +29,7 @@ Route::get('/', function () {
 
 Route::get('/dashboard',function(){
     return view('dashboardAdmin');
-})->name("dashboard");
+})->name("dashboardI");
 
 Route::get('/clientes',[ClienteController::class,'index'])->name("clientes");
 
