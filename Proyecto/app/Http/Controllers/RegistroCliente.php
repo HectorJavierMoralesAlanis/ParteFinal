@@ -24,7 +24,6 @@ class RegistroCliente extends Controller
             'username'=>'required|unique:clientes|max:40',
             'emailC'=>'required|unique:clientes|email|max:60',
             'password'=>'required|confirmed|min:2',
-            'password_confirmation'=>'',
             'telefonoC'=>'required|min:10|max:13',
             'compNombreC'=>'required|min:10',
         ]);
@@ -34,7 +33,6 @@ class RegistroCliente extends Controller
             'username'=>$request->usernameC,
             'emailC'=>$request->emailC,
             'password'=>Hash::make($request->password),
-            'password_confirmation'=>$request->password,
             'telefonoC'=>$request->telefonoC,
             'compNombreC'=>$request->compNombreC,
         ]);
