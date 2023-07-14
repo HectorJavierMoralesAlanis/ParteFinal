@@ -9,6 +9,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\proyectosController;
 use App\Http\Controllers\colaboradoresController;
 use App\Http\Controllers\CrearProyectoController;
+use App\Http\Controllers\CrearColaboradorController;
 
 /*
 |--------------------------------------------------------------------------
