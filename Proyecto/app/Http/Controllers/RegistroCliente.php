@@ -16,8 +16,7 @@ class RegistroCliente extends Controller
 
     public function store(Request $request){
         
-        $request->request->add(['username'=>Str::slug($request->username)]);
-        dd('ded');
+        //$request->request->add(['username'=>Str::slug($request->username)]);
         //validar campos de formulario 
         $this->validate($request,[
             'nombreC'=>'required|max:40',
