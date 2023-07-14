@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('apellidoC');
             $table->string('username')->unique();
             $table->string('emailC')->unique();
-            $table->string('password');
+            $table->string('passwordC');
             $table->string('telefonoC');
             $table->string('compNombreC');
             $table->rememberToken();

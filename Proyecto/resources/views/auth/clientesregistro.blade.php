@@ -100,21 +100,21 @@
                 </div>
 
                 <div class="mb-5">
-                    <label for="password" class="mb-2 black uppercase text-gray-500 font-bold">
+                    <label for="passwordC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Password del cliente
                     </label>
                     <input
                         id="password"
-                        name="password"
-                        type="password"
+                        name="passwordC"
+                        type="passwordC"
                         placeholder="Ingrese el password del cliente"
                         class="border p-2 w-full rounded tg
-                        @error('password')
+                        @error('passwordC')
                             border-red-500
                         @enderror"
-                        value="{{old('password')}}"
+                        value="{{old('passwordC')}}"
                     >
-                    @error('password')
+                    @error('passwordC')
                         <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">
                             {{$message}}
                         </p>
