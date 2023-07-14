@@ -16,7 +16,7 @@ class Cliente extends Model
         'username',
         'emailC',
         'passwordC',
-        'repasswordC',
+        'password_confirmation',
         'telefonoC',
         'compNombreC',
     ];
