@@ -78,47 +78,32 @@
                 </div>
 
                 <div class="mb-5">
-                    <label for="emailC" class="mb-2 black uppercase text-gray-500 font-bold">
-                        Email del cliente
+                    <label for="password" class="mb-2 block uppercase text-gray-500 font-bold">
+                    Contrasena
                     </label>
-                    <input
-                        id="emailC"
-                        name="emailC"
-                        type="email"
-                        placeholder="Ingrese el correo del cliente"
-                        class="border p-2 w-full rounded tg
-                        @error('emailC')
-                            border-red-500
+                    <input 
+                        id="password"
+                        name="password"
+                        type="password"
+                        placeholder="Ingresa tu password de registro"
+                        class="border p-3 w-full rounded-lg @error('password') border-red-500
                         @enderror"
-                        value="{{old('emailC')}}"
-                    >
-                    @error('emailC')
-                        <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">
-                            {{$message}}
-                        </p>
+                    />
+                    @error('password')
+                        <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center"> {{ $message }}</p>
                     @enderror
                 </div>
-
                 <div class="mb-5">
-                    <label for="passwordC" class="mb-2 black uppercase text-gray-500 font-bold">
-                        Password del cliente
+                    <label for="password_confirmation" class="mb-2 block uppercase text-gray-500 font-bold">
+                    Repetir contrasena
                     </label>
-                    <input
-                        id="passwordC"
-                        name="passwordC"
+                    <input 
+                        id="password_confirmation"
+                        name="password_confirmation"
                         type="password"
-                        placeholder="Ingrese el password del cliente"
-                        class="border p-2 w-full rounded tg
-                        @error('passwordC')
-                            border-red-500
-                        @enderror"
-                        value="{{old('passwordC')}}"
-                    >
-                    @error('passwordC')
-                        <p class="bg-red-500 text-white my-2 rounded-lg text-sm p-2 text-center">
-                            {{$message}}
-                        </p>
-                    @enderror
+                        placeholder="Repite tu password de registro"
+                        class="border p-3 w-full rounded-lg"
+                    />
                 </div>
 
                 <div class="mb-5">
