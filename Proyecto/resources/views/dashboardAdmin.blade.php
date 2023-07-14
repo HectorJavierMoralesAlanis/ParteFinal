@@ -14,7 +14,7 @@
         
         <div class="bg-slate-200 shadow-xl shadow-slate-200 font-bold text-xl mb-10 col-span-2 rounded-md container mx-auto px-40">
             <div class="container mx-auto">
-                <p>Colaboradores <?php $colaboradores->count()?></p>
+                <p>Colaboradores <?php $colaboradores?></p>
             </div>
         </div>
         <div class="bg-slate-200 shadow-xl shadow-slate-200 font-bold text-xl mb-10 col-span-2 rounded-md container mx-auto px-40">
