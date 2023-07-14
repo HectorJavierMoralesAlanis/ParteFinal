@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        
+
         Schema::create('clientes', function (Blueprint $table) {
             $table->id();
             $table->string('nombreC');
@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('username')->unique();
             $table->string('emailC')->unique();
             $table->string('password');
-            $table->string('password_confirmation');
             $table->string('telefonoC');
             $table->string('compNombreC');
             $table->rememberToken();
