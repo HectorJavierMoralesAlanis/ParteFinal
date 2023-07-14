@@ -3,12 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class LoginController extends Controller
 {
     //
     public function index(){
-        return view('loginInicio');
+        $colaboradores = DB::table('colaboradores');
+        return view('loginInicio',[
+            'colaboradores'=>$colaboradores
+        ]);
     }
 
     //Metodo de validacion de formulario de laogin

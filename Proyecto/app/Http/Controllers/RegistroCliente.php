@@ -28,8 +28,7 @@ class RegistroCliente extends Controller
             'telefonoC'=>'required|min:10|max:13',
             'compNombreC'=>'required|min:10'
         ]);
-        dd('entro');
-        /*
+        
         Cliente::create([
             'nombreC'=>$request->nombreC,
             'apellidoC'=>$request->apellidoC,
@@ -40,7 +39,6 @@ class RegistroCliente extends Controller
             'telefonoC'=>$request->telefonoC,
             'compNombreC'=>$request->compNombreC,
         ]);
-        dd('yeah baby');*/
         //return view('auth.clientes');
     }
 }
