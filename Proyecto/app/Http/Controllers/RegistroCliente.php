@@ -21,7 +21,7 @@ class RegistroCliente extends Controller
         $this->validate($request,[
             'nombreC'=>'required|max:40',
             'apellidoC'=>'required|max:40',
-            'username'=>'required|unique:clientes|max:40',
+            'usernameC'=>'required|unique:clientes|max:40',
             'emailC'=>'required|unique:clientes|email|max:60',
             'password'=>'required|confirmed|min:2',
             'password_confirmation'=>'',
@@ -33,17 +33,14 @@ class RegistroCliente extends Controller
         Cliente::create([
             'nombreC'=>$request->nombreC,
             'apellidoC'=>$request->apellidoC,
-            'username'=>$request->usernameC,
+            'usernameC'=>$request->usernameC,
             'emailC'=>$request->emailC,
             'password' => Hash::make($request->password),
             'password_confirmation' => $request->password,
             'telefonoC'=>$request->telefonoC,
             'compNombreC'=>$request->compNombreC,
         ]);
-        auth()->attempt([
-            'email'=>$request->email,
-            'password'=>$request->password
-        ]);
+        
         return redirect()->route('auth.clientes');
     }
 }
