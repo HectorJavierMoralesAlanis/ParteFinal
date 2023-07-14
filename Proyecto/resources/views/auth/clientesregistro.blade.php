@@ -127,7 +127,7 @@
                     </label>
                     <input
                         id="repasswordC"
-                        name="reapasswordC"
+                        name="repasswordC"
                         type="text"
                         placeholder="Reingrese el password del cliente"
                         class="border p-2 w-full rounded tg
