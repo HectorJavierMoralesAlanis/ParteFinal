@@ -27,7 +27,7 @@ class RegistroCliente extends Controller
             'password'=>'required|min:2',
             'password_confirmation'=>'',
             'telefonoC'=>'required|min:10|max:13',
-            'compNombreC'=>'required|min:10',
+            'compNombreC'=>'required|min:10'
         ]);
         dd('entro');
         /*
