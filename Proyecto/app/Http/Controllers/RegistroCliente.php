@@ -39,7 +39,6 @@ class RegistroCliente extends Controller
             'telefonoC'=>$request->telefonoC,
             'compNombreC'=>$request->compNombreC,
         ]);
-
         auth()->attempt([
             'email'=>$request->email,
             'passwordC'=>$request->passwordC
