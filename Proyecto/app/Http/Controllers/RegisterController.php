@@ -12,8 +12,7 @@ class RegisterController extends Controller
 {
     //
     public function index(){
-        $colaboradores = DB::table('colaboradores');
-        return view('dashboardAdmin')->with('colaboradores',$colaboradores);
+        return view('auth.register');
     }
 
     //Creacion del metodo para almacenar usuarios
