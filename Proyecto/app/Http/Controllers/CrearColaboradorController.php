@@ -19,6 +19,7 @@ class CrearColaboradorController extends Controller
 
     public function store(Request $request){
         $this->validate($request,[
+            'id' =>"required",
             'nombrecolaborador' => "required|max:255",
             'apellidocolaborador' => "required|max:255",
             'usernamecolaborador'=> "required",
