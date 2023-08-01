@@ -5,6 +5,6 @@
 @endsection()
 
 @section('contenido')
-    Aqui deberia mostrar los datos del colaborador
+    Aqui deberia mostrar los datos del colaborador ejemplo
 @endsection()
 
