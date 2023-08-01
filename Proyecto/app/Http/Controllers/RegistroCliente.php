@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Cliente;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class RegistroCliente extends Controller
@@ -15,20 +16,20 @@ class RegistroCliente extends Controller
     }
 
     public function store(Request $request){
-        
-        //$request->request->add(['username'=>Str::slug($request->username)]);
+        $request->request->add(['username'=>Str::slug($request->username)]);
+
         //validar campos de formulario 
         $this->validate($request,[
             'nombreC'=>'required|max:40',
             'apellidoC'=>'required|max:40',
-            'username'=>'required|max:40',
-            'emailC'=>'required|email|max:60',
-            'password'=>'required|min:2',
-            'password_confirmation'=>'',
+            'usernameC'=>'required|max:40',
+            'emailC'=>'required|unique:clientes|email|max:60',
+            'password'=>'required|confirmed|min:4',
+            'repassword'=>'',
             'telefonoC'=>'required|min:10|max:13',
-            'compNombreC'=>'required|min:10'
+            'compNombreC'=>'required|min:10',
         ]);
-        
+
         Cliente::create([
             'nombreC'=>$request->nombreC,
             'apellidoC'=>$request->apellidoC,
@@ -39,6 +40,8 @@ class RegistroCliente extends Controller
             'telefonoC'=>$request->telefonoC,
             'compNombreC'=>$request->compNombreC,
         ]);
-        //return view('auth.clientes');
+
+        $clientes = DB::table('clientes')->get();
+        return view('auth.clientes')->with('clientes',$clientes);
     }
 }

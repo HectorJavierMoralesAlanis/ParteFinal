@@ -9,7 +9,6 @@ class LoginController extends Controller
 {
     //
     public function index(){
-        
         return view('loginInicio');
     }
 
@@ -26,9 +25,17 @@ class LoginController extends Controller
             //Utilizar directiva "with" para llenar los valores de la sesion
             return back()->with('mensaje','credenciales incorrectas');
         }
-
+        return redirect()->route('dcolaborador');
+        /*
+        if(auth()->user()->id==1){
         //Credenciales correctas
         $colaboradores = DB::table('colaboradores');
-        return view('dashboardAdmin')->with('colaboradores',$colaboradores);
+        $clientes = DB::table('clientes');
+        $proyectos= DB::table('proyectos');
+        //return redirect()->route('post.index',auth()->user()->email);
+            return view('dashboardAdmin')->with('colaboradores',$colaboradores,'clientes',$clientes,'proyectos',$proyectos);
+        }else{
+            return view('dahsboardColaborador');
+        }*/
     }
 }

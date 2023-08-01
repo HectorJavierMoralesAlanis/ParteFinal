@@ -42,7 +42,10 @@ class RegisterController extends Controller
             'email' => $request->email,
             'password' =>$request->password           
         ]);
-        $colaboradores = DB::table('colaboradores');
-        return view('dashboardAdmin')->with('colaboradores',$colaboradores);
+        if(auth()->user()->id==1){
+            return view('dashboardAdmin');
+        }else{
+            return view('dahsboardColaborador');
+        }
     }
 }
