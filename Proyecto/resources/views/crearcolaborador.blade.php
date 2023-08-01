@@ -57,22 +57,9 @@
                 <input 
                     id="passwordcolaborador"
                     name="passwordcolaborador"
-                    type="text"
+                    type="password"
                     placeholder="Password"
                     class="border p-3 w-full rounded-lg "
-                />
-            </div>
-
-            <div class="mb-5">
-                <label for="idcolaborador" class="mb-2 block uppercase text-gray-500 font-bold">
-                ID colaborador:
-                </label>
-                <input 
-                    id="idcolaborador"
-                    name="idcolaborador"
-                    type="text"
-                    placeholder="id colaborador"
-                    class="border p-3 w-full rounded-lg"
                 />
             </div>
 

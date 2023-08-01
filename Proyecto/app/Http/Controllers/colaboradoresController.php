@@ -10,9 +10,22 @@ class colaboradoresController extends Controller
     public function index(){
         return view('colaboradores');
     }
-    public function show(colaboradores $colaboradores ){
+
+    public function create(){
+        return view ('colaboradores');
+    }
+    public function show(colaboradores $colaboradores){
         return view('colaboradores',[
-            'colaboradores' => $colaboradores
+            'colaboradores' => $colaboradores::all()
+            
         ]);
+        //dd('ola');
+    }
+    public function showColab(colaboradores $colaboradores){
+        return view('colaboradores.show',[
+            'colaboradores' => $colaboradores::all()
+            
+        ]);
+        //dd('ola');
     }
 }

@@ -100,6 +100,36 @@
                     </div> 
                 </div>
                 <!--Aqui termina segunda tarjeta-->
+
+                <!-- RECIBIR Y MOSTRAR LOS POSTS DE PUBLICACION-->
+                
+                @if ($proyectos->count() )
+                    @foreach ($proyectos as $proyecto)
+                    <div class="bg-white rounded-lg shadow p-6">
+                        <div class="w-8/12 lg:w-6/12 px-5">
+                            <img src="{{ asset('img/colaboradores/avatar-12.jpg')}}" alt="imagen de perfil"> 
+                        </div>
+                        <h4 class="user-name m-t-10 mb-0 text-ellipsis font-bold text-center">
+                            <a href="/colaboradores">{{  $proyecto->nombreproyecto   }}</a>        
+                        </h4>
+                        <div class="small text-muted text-center">
+                            <span>{{    $proyecto->descripcionproyecto    }}</span>
+                        </div>
+                        <div class="small text-muted text-center">Deadline:
+                            <span>{{    $proyecto->fechaterminado    }}</span>
+                        </div>
+                        <div class="small text-muted text-center">Deadline:
+                            <span>{{    $proyecto->liderproyecto    }}</span>
+                        </div>
+                        <div class="small text-muted text-center">Deadline:
+                            <span>{{    $proyecto->nombreteam    }}</span>
+                        </div>
+                    </div>
+                    @endforeach    
+
+            @else
+                <p class="text-gray-600 uppercase text-sm text-center font-bold"> Aun no hay colaboradores registrados </p>
+            @endif
             </div>
         </main>
     </body>
