@@ -31,7 +31,7 @@ class CrearColaboradorController extends Controller
 
         ]);
     $colaboradores = new colaboradores;
-    $colaboradores->idcolaborador =$request->id(); 
+    $colaboradores->idcolaborador =$request->id; 
     $colaboradores->nombrecolaborador = $request->nombrecolaborador;
     $colaboradores->apellidocolaborador = $request->apellidocolaborador;
     $colaboradores->usernamecolaborador = Str::slug($request->usernamecolaborador);
