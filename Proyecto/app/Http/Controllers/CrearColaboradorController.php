@@ -28,20 +28,34 @@ class CrearColaboradorController extends Controller
             'companiacolaborador'=> "required",
             'departamentocolaborador'=> "required",
             'designacioncolaborador'=> "required"
+
         ]);
-        
-        $colaboradores = new colaboradores;
-        $colaboradores->nombrecolaborador = $request->nombrecolaborador;
-        $colaboradores->apellidocolaborador = $request->apellidocolaborador;
-        $colaboradores->usernamecolaborador = Str::slug($request->usernamecolaborador);
-        $colaboradores->passwordcolaborador = Hash::make($request->passwordcolaborador);
-        $colaboradores->joindatecolaborador = $request->joindatecolaborador;
-        $colaboradores->telefonocolaborador = $request->telefonocolaborador;
-        $colaboradores->companiacolaborador = $request->companiacolaborador;
-        $colaboradores->departamentocolaborador = $request->departamentocolaborador;
-        $colaboradores->designacioncolaborador = $request->designacioncolaborador;
-        $colaboradores->save();
-        
+
+        colaboradores::create([
+            'nombrecolaborador' => $request->nombrecolaborador,
+            'apellidocolaborador' => $request->apellidocolaborador,
+            'usernamecolaborador' => $request->usernamecolaborador,
+            'passwordcolaborador' => $request->passwordcolaborador,
+            'joindatecolaborador' => $request->joindatecolaborador,
+            'telefonocolaborador' => $request->telefonocolaborador,
+            'companiacolaborador' => $request->companiacolaborador,
+            'departamentocolaborador' => $request->departamentocolaborador,
+            'designacioncolaborador' => $request->designacioncolaborador
+        ]);
+        /*
+    $colaboradores = new colaboradores;
+    $colaboradores->idcolaborador =$request->id; 
+    $colaboradores->nombrecolaborador = $request->nombrecolaborador;
+    $colaboradores->apellidocolaborador = $request->apellidocolaborador;
+    $colaboradores->usernamecolaborador = Str::slug($request->usernamecolaborador);
+    $colaboradores->passwordcolaborador = Hash::make($request->passwordcolaborador);
+    $colaboradores->joindatecolaborador = $request->joindatecolaborador;
+    $colaboradores->telefonocolaborador = $request->telefonocolaborador;
+    $colaboradores->companiacolaborador = $request->companiacolaborador;
+    $colaboradores->departamentocolaborador = $request->departamentocolaborador;
+    $colaboradores->designacioncolaborador = $request->designacioncolaborador;
+    $colaboradores->save();
+    */
     
     //dd('creaste el proyecto');
     
