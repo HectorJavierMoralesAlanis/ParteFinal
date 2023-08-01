@@ -33,7 +33,7 @@ class CrearColaboradorController extends Controller
             'departamentocolaborador'=> "required",
             'designacioncolaborador'=> "required"
 
-        ]);
+    ]);
     $colaboradores = new colaboradores;
     $colaboradores->nombrecolaborador = $request->nombrecolaborador;
     $colaboradores->apellidocolaborador = $request->apellidocolaborador;
