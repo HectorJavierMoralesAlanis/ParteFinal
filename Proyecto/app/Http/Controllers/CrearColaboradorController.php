@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-
-
-use App\Models\colaboradores;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use App\Models\colaboradores;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Hash;
 
 class CrearColaboradorController extends Controller
 {
@@ -16,9 +16,6 @@ class CrearColaboradorController extends Controller
         return view('crearcolaborador');
     }
 
-    public function create(){
-        return view ('crearcolaborador');
-    }
 
     public function store(Request $request){
         $this->validate($request,[
@@ -26,20 +23,18 @@ class CrearColaboradorController extends Controller
             'apellidocolaborador' => "required|max:255",
             'usernamecolaborador'=> "required",
             'passwordcolaborador'=> "required",
-            'idcolaborador' => "required",
             'joindatecolaborador' => "required",
             'telefonocolaborador' => "required",
             'companiacolaborador'=> "required",
             'departamentocolaborador'=> "required",
             'designacioncolaborador'=> "required"
 
-    ]);
+        ]);
     $colaboradores = new colaboradores;
     $colaboradores->nombrecolaborador = $request->nombrecolaborador;
     $colaboradores->apellidocolaborador = $request->apellidocolaborador;
-    $colaboradores->usernamecolaborador = $request->usernamecolaborador;
-    $colaboradores->passwordcolaborador = $request->passwordcolaborador;
-    $colaboradores->idcolaborador = $request->idcolaborador;
+    $colaboradores->usernamecolaborador = Str::slug($request->usernamecolaborador);
+    $colaboradores->passwordcolaborador = Hash::make($request->passwordcolaborador);
     $colaboradores->joindatecolaborador = $request->joindatecolaborador;
     $colaboradores->telefonocolaborador = $request->telefonocolaborador;
     $colaboradores->companiacolaborador = $request->companiacolaborador;
@@ -53,9 +48,6 @@ class CrearColaboradorController extends Controller
     return redirect()->route('colaboradores');
     
     }
-    public function show(colaboradores $colaboradores ){
-        return view('colaboradores',[
-            'colaboradores' => $colaboradores
-        ]);
-    }
+    
+
 }
