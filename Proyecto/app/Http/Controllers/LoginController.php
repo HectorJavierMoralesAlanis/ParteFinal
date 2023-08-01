@@ -33,7 +33,7 @@ class LoginController extends Controller
             $clientes = DB::table('clientes');
             $colaboradores2 = DB::table('proyectos');
             //return redirect()->route('post.index',auth()->user()->email);
-            return view ('clients')->with('colaboradores',$colaboradores,'clientes',$clientes,'proyectos',$colaboradores2);
+            return view ('clients')->with('colaboradores',$colaboradores,'clientes',$clientes,'colaboradores2',$colaboradores2);
 
         }else{
             $colaboradores = DB::table('colaboradores');
