@@ -100,7 +100,7 @@
                     <input
                         id="password"
                         name="password"
-                        type="text"
+                        type="password"
                         placeholder="Ingrese el password del cliente"
                         class="border p-2 w-full rounded tg
                         @error('password')
@@ -121,7 +121,7 @@
                     <input
                         id="password_confirmation"
                         name="password_confirmation"
-                        type="text"
+                        type="password"
                         placeholder="Reingrese el password del cliente"
                         class="border p-2 w-full rounded tg
                         @error('password_confirmation')
