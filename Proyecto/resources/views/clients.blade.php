@@ -9,7 +9,7 @@
 
         <div class="mb-5">
             <label for="name" class="mb-2 block uppercase text-gray-500 font-bold p-4">
-            Nombre del cliente <?php echo $colaboradores->count() ?>
+            Nombre del cliente <?php echo $colaboradores->count()?>
             </label>
             <input 
                 id="name-cliente"
