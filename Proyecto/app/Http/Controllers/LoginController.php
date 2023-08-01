@@ -31,9 +31,9 @@ class LoginController extends Controller
         //Credenciales correctas
             $colaboradores = DB::table('colaboradores');
             $clientes = DB::table('clientes');
-            $colaboradores2 = DB::table('proyectos');
+            $proyectos = DB::table('proyectos');
             //return redirect()->route('post.index',auth()->user()->email);
-            return view ('clients')->with('colaboradores',$colaboradores,'clientes',$clientes,'colaboradores2',$colaboradores2);
+            return view ('clients')->with('colaboradores',$colaboradores)->with('clientes',$clientes) -> with('proyectos',$proyectos);
 
         }else{
             $colaboradores = DB::table('colaboradores');
