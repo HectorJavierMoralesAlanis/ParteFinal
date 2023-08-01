@@ -43,9 +43,15 @@ class RegisterController extends Controller
             'password' =>$request->password           
         ]);
         if(auth()->user()->id==1){
-            return view('dashboardAdmin');
+            $colaboradores = DB::table('colaboradores');
+            $clientes = DB::table('clientes');
+            $proyectos = DB::table('proyectos');
+            return view('dashboardAdmin')->with('colaboradores',$colaboradores,'clientes',$clientes,'proyectos',$proyectos);
         }else{
-            return view('dahsboardColaborador');
+            $colaboradores = DB::table('colaboradores');
+            $clientes = DB::table('clientes');
+            $proyectos = DB::table('proyectos');
+            return view('dahsboardColaborador')->with('colaboradores',$colaboradores,'clientes',$clientes,'proyectos',$proyectos);
         }
     }
 }

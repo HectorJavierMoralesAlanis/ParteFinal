@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegistroCliente;
+use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
