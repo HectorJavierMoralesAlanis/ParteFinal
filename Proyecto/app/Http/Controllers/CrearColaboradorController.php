@@ -19,7 +19,6 @@ class CrearColaboradorController extends Controller
 
     public function store(Request $request){
         $this->validate($request,[
-            'id' =>"required",
             'nombrecolaborador' => "required|max:255",
             'apellidocolaborador' => "required|max:255",
             'usernamecolaborador'=> "required",
@@ -31,19 +30,18 @@ class CrearColaboradorController extends Controller
             'designacioncolaborador'=> "required"
 
         ]);
-    $colaboradores = new colaboradores;
-    $colaboradores->idcolaborador =$request->id; 
-    $colaboradores->nombrecolaborador = $request->nombrecolaborador;
-    $colaboradores->apellidocolaborador = $request->apellidocolaborador;
-    $colaboradores->usernamecolaborador = Str::slug($request->usernamecolaborador);
-    $colaboradores->passwordcolaborador = Hash::make($request->passwordcolaborador);
-    $colaboradores->joindatecolaborador = $request->joindatecolaborador;
-    $colaboradores->telefonocolaborador = $request->telefonocolaborador;
-    $colaboradores->companiacolaborador = $request->companiacolaborador;
-    $colaboradores->departamentocolaborador = $request->departamentocolaborador;
-    $colaboradores->designacioncolaborador = $request->designacioncolaborador;
-    $colaboradores->save();
-    
+        $colaboradores = new colaboradores;
+        $colaboradores->nombrecolaborador = $request->nombrecolaborador;
+        $colaboradores->apellidocolaborador = $request->apellidocolaborador;
+        $colaboradores->usernamecolaborador = Str::slug($request->usernamecolaborador);
+        $colaboradores->passwordcolaborador = Hash::make($request->passwordcolaborador);
+        $colaboradores->joindatecolaborador = $request->joindatecolaborador;
+        $colaboradores->telefonocolaborador = $request->telefonocolaborador;
+        $colaboradores->companiacolaborador = $request->companiacolaborador;
+        $colaboradores->departamentocolaborador = $request->departamentocolaborador;
+        $colaboradores->designacioncolaborador = $request->designacioncolaborador;
+        $colaboradores->save();
+        
     
     //dd('creaste el proyecto');
     
