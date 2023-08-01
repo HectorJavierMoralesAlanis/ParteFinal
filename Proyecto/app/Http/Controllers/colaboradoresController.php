@@ -20,12 +20,12 @@ class colaboradoresController extends Controller
             
         ]);
         //dd('ola');
-    }
+    } /*
     public function showColab(colaboradores $colaboradores){
         return view('colaboradores.show',[
             'colaboradores' => $colaboradores::all()
             
         ]);
         //dd('ola');
-    }
+    }*/
 }
