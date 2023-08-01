@@ -39,7 +39,7 @@ class LoginController extends Controller
             $colaboradores = DB::table('colaboradores');
             $clientes = DB::table('clientes');
             $proyectos = DB::table('proyectos');
-            return view('dahsboardColaborador')->with('colaboradores',$colaboradores,'clientes',$clientes,'proyectos',$proyectos);
+            return view('dahsboardColaborador')->with('colaboradores',$colaboradores)->with('clientes',$clientes)->with('proyectos',$proyectos);
         }
     }
 }

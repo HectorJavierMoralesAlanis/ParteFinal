@@ -10,6 +10,8 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
         <!-- Insertar estilo de dropzone-->
     </head>
     <body class="bg-slate-800">
