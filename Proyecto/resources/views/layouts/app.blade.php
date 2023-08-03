@@ -87,6 +87,19 @@
                     </div>
                 </div>
             </div>
+            <div class="basis-1/2">
+                <!-- Contenido de las vistas -->
+                <main>
+                    <h2 class="font-black text-center text-3xl mb-10 text-black">
+                        @yield('titulo')
+                    </h2>
+                    @yield('contenido')
+                </main>
+                @endauth
+                <footer class="text-center p-5 text-gray-500 font-bold">
+                    Derechos reservados {{now()->year}}
+                </footer>
+            </div>
             @else
             <aside class="fixed top-20 left-0 z-40 w-64 h-screen text-center transistion-transform-translate-x-full sm:translate-x-0 bg-neutral-900 shadow p-4 position: sticky;">
                 <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800">
@@ -128,19 +141,7 @@
                 </div>
             </aside>
             @endif
-            <div class="basis-1/2">
-                <!-- Contenido de las vistas -->
-                <main>
-                    <h2 class="font-black text-center text-3xl mb-10 text-black">
-                        @yield('titulo')
-                    </h2>
-                    @yield('contenido')
-                </main>
-                @endauth
-                <footer class="text-center p-5 text-gray-500 font-bold">
-                    Derechos reservados {{now()->year}}
-                </footer>
-            </div>
+            
         </div>
         <script type="text/javascript">
             function Open(){
