@@ -1,16 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\colaboradores;
 use Illuminate\Http\Request;
+use App\Models\colaboradores;
+use Illuminate\Support\Facades\DB;
 
 class colaboradoresController extends Controller
 {
     //
     public function index(){
-        return view('colaboradores');
+        $colaborador = DB::table('colaboradores')->get();
+        return view('colaboradores')->with('colaborador',$colaborador);
     }
-
+    /*
     public function create(){
         return view ('colaboradores');
     }
@@ -27,5 +29,5 @@ class colaboradoresController extends Controller
             
         ]);
         //dd('ola');
-    }
+    }*/
 }
