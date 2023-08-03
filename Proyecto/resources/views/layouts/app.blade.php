@@ -31,9 +31,10 @@
                     </nav>
             </div>
         </header>
-        <div class="flex flex-column">
+        <div class="flex flex-column h-full">
+            <div class="flex-initial w-64">
             @if(auth()->user()->id==1) 
-            <div class="flex-initial w-64 h-full">
+            <div class="flex-initial w-64">
                 <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800">
                     <div class="text-bg-100 text-xl">
                         <div class="p-2.5 mt-1 flex items-center">
@@ -129,7 +130,8 @@
                 </div>
             </aside>
             @endif
-            <div class="flex-initial w-full h-50%">
+            </div>
+            <div class="flex-initial w-full">
                 <!-- Contenido de las vistas -->
                 <div class="p-4 border-2 border-gray-200 rounded-lg dark:border-gray-700">
                 <main class="container mx-auto MT-10">
