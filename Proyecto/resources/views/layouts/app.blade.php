@@ -34,7 +34,7 @@
         <div class="flex flex-row">
 
             @if(auth()->user()->id==1) 
-            <div class="fixed top-20 left-0 z-40 h-screen text-center transistion-transform-translate-x-full sm:translate-x-0 bg-neutral-900 shadow p-4 position: sticky;">
+            <div class="fixed top-20 left-0 z-40 h-screen text-center transistion-transform-translate-x-full sm:translate-x-0 bg-neutral-900 shadow p-4 position: sticky; basis-1/4">
                 <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800">
                     <div class="text-bg-100 text-xl">
                         <div class="p-2.5 mt-1 flex items-center">
@@ -130,7 +130,7 @@
                 </div>
             </aside>
             @endif
-            <div class="basis-1/2 grow h-10">
+            <div class="basis-1/2">
                 <!-- Contenido de las vistas -->
                 <div>
                 <main class="container mx-auto MT-10">
