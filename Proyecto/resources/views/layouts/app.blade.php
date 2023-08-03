@@ -30,7 +30,7 @@
                     </nav>
             </div>
         </header>
-        <div class="flex">
+        <div>
             @if(auth()->user()->id==1) 
 
                 <aside class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800">
@@ -86,7 +86,6 @@
                         <a class="text-[15px] ml-4 text-gray-200" href="{{route ('colaboradores')}}">Colaboradores</a>
                     </div>
                 </aside>
-
             @else
             <aside class="fixed top-20 left-0 z-40 w-64 h-screen text-center transistion-transform-translate-x-full sm:translate-x-0 bg-neutral-900 shadow p-4 position: sticky;">
                 <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800">
@@ -128,7 +127,7 @@
                 </div>
             </aside>
             @endif
-            <main class="shrink w-full h-14">
+            <main>
                 <!-- Contenido de las vistas -->
                 <main>
                     <h2 class="font-black text-center text-3xl mb-10 text-black">
