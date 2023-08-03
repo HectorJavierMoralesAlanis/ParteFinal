@@ -30,6 +30,7 @@
                     </nav>
             </div>
         </header>
+        
         <div class="flex flex-row">
             @if(auth()->user()->id==1) 
             <div class="shrink h-full ">
