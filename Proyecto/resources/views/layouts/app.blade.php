@@ -31,7 +31,7 @@
                     </nav>
             </div>
         </header>
-        <div class="flex flex-column">
+        <div class="flex flex-column h-full">
             @if(auth()->user()->id==1) 
             <div class="shrink">
                 <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800">
