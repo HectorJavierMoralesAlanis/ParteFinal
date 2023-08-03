@@ -31,7 +31,7 @@
                     </nav>
             </div>
         </header>
-        <div class="flex flex-column h-full">
+        <div class="flex flex-column">
             <div class="flex-initial w-64">
             @if(auth()->user()->id==1) 
             <div class="flex-initial w-64 h-full">
@@ -131,7 +131,7 @@
             </aside>
             @endif
             </div>
-            <div class="flex-initial w-full">
+            <div class="flex-initial w-full high-90%">
                 <!-- Contenido de las vistas -->
                 <div class="p-4 border-2 border-gray-200 rounded-lg dark:border-gray-700">
                 <main class="container mx-auto MT-10">
