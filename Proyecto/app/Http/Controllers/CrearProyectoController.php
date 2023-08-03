@@ -31,7 +31,6 @@ class CrearProyectoController extends Controller
             'prioridad'=> "required",
             'liderproyecto'=> "required",
             'nombreteam'=> "required"
-
         ]);
         proyectos::create([
             'nombreproyectos' => $request->nombreproyectos,
