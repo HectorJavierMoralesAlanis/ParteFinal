@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Http\Request;
 use App\Models\colaboradores;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
 
@@ -42,24 +43,9 @@ class CrearColaboradorController extends Controller
             'departamentocolaborador' => $request->departamentocolaborador,
             'designacioncolaborador' => $request->designacioncolaborador
         ]);
-        /*
-    $colaboradores = new colaboradores;
-    $colaboradores->idcolaborador =$request->id; 
-    $colaboradores->nombrecolaborador = $request->nombrecolaborador;
-    $colaboradores->apellidocolaborador = $request->apellidocolaborador;
-    $colaboradores->usernamecolaborador = Str::slug($request->usernamecolaborador);
-    $colaboradores->passwordcolaborador = Hash::make($request->passwordcolaborador);
-    $colaboradores->joindatecolaborador = $request->joindatecolaborador;
-    $colaboradores->telefonocolaborador = $request->telefonocolaborador;
-    $colaboradores->companiacolaborador = $request->companiacolaborador;
-    $colaboradores->departamentocolaborador = $request->departamentocolaborador;
-    $colaboradores->designacioncolaborador = $request->designacioncolaborador;
-    $colaboradores->save();
-    */
-    
-    //dd('creaste el proyecto');
-    
-    return redirect()->route('colaboradores');
+
+        $colaboradores = DB::table('colaboradores');
+        return view('colaboradores')->with('colaboradores',$colaboradores);
     
     }
     
