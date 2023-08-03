@@ -32,7 +32,7 @@
         </header>
         
         <div class="flex flex-row">
-            
+
             @if(auth()->user()->id==1) 
             <div class="basis-1/4">
             <aside class="fixed top-20 left-0 z-40 h-screen text-center transistion-transform-translate-x-full sm:translate-x-0 bg-neutral-900 shadow p-4 position: sticky;">
@@ -134,7 +134,7 @@
             @endif
             <div class="basis-1/2">
                 <!-- Contenido de las vistas -->
-                <div class="w-[110%] max-w-md mx-auto">
+                <div>
                 <main class="container mx-auto MT-10">
                     <h2 class="font-black text-center text-3xl mb-10 text-black">
                         @yield('titulo')
