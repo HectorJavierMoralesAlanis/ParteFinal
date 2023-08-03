@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('apellidocolaborador');
             $table->string('usernamecolaborador');
             $table->string('passwordcolaborador');
-            $table->string('idcolaborador');
             $table->string('joindatecolaborador');
             $table->string('telefonocolaborador');
             $table->string('companiacolaborador');
