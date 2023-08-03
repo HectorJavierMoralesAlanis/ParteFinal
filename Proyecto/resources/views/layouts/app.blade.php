@@ -35,7 +35,7 @@
             <div class="flex-initial w-64">
             @if(auth()->user()->id==1) 
             <div class="flex-initial w-64 h-full">
-                <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800 shadow p-4">
+                <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800 ">
                     <div class="text-bg-100 text-xl">
                         <div class="p-2.5 mt-1 flex items-center">
                             <i class="px-2 py-1">
