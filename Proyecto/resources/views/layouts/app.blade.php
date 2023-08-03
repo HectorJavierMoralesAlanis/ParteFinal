@@ -128,10 +128,10 @@
             </div>
         </aside>
         @endif
-        
+
         <div class="p-4 sm:ml-64">
             <!-- Contenido de las vistas -->
-            <div class="w-[90%] max-w-md mx-auto">
+            <div class="w-[110%] max-w-md mx-auto">
             <main class="container mx-auto MT-10">
                 <h2 class="font-black text-center text-3xl mb-10 text-black">
                     @yield('titulo')
