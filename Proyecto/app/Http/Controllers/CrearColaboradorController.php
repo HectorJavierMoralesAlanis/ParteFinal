@@ -45,7 +45,7 @@ class CrearColaboradorController extends Controller
 
         ]);
 
-        $colaboradores = DB::table('colaboradores');
+        $colaboradores = DB::table('colaboradores')->get();
         return view('colaboradores')->with('colaboradores',$colaboradores);
     
     }
