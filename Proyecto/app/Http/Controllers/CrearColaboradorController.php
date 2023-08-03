@@ -41,7 +41,7 @@ class CrearColaboradorController extends Controller
             'telefonocolaborador' => $request->telefonocolaborador,
             'companiacolaborador' => $request->companiacolaborador,
             'departamentocolaborador' => $request->departamentocolaborador,
-            'designacioncolaborador' => $request->designacioncolaborador
+            'designacioncolaborador' => $request->designacioncolaborador,
         ]);
 
         $colaboradores = DB::table('colaboradores');
