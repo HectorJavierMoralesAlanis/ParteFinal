@@ -126,10 +126,9 @@
                         </div>
                     </div>
                     @endforeach    
-
-            @else
-                <p class="text-gray-600 uppercase text-sm text-center font-bold"> Aun no hay colaboradores registrados </p>
-            @endif
+                @else
+                    <p class="text-gray-600 uppercase text-sm text-center font-bold"> Aun no hay colaboradores registrados </p>
+                @endif
             </div>
         </main>
     </body>
