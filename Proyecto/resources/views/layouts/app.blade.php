@@ -129,7 +129,7 @@
         </aside>
         @endif
 
-        <div class="p-4 sm:ml-64">
+        <div>
             <!-- Contenido de las vistas -->
             <div class="w-[110%] max-w-md mx-auto">
             <main class="container mx-auto MT-10">
