@@ -31,7 +31,7 @@
                     </nav>
             </div>
         </header>
-        <div class="flex ">
+        <div class="flex flex-column">
             <div class="p-4 sm:ml-64">
             @if(auth()->user()->id==1) 
             <aside class="fixed top-20 left-0 z-40 w-64 h-screen text-center transistion-transform-translate-x-full sm:translate-x-0 bg-neutral-900 shadow p-4 position: sticky;">
@@ -130,7 +130,7 @@
                 </div>
             </aside>
             @endif
-            <div class="p-4 sm:ml-64">
+            <div class="shrink ">
                 <!-- Contenido de las vistas -->
                 <div class="p-4 border-2 border-gray-200 rounded-lg dark:border-gray-700">
                 <main class="container mx-auto MT-10">
