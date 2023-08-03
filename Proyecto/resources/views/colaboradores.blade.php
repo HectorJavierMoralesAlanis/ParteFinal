@@ -5,7 +5,7 @@
 @endsection
 
 @section('contenido')
-    <div>
+    <body class="row staff-grid-row">
         <div class="mb-5">
             <label for="name" class="mb-2 block uppercase text-gray-500 font-bold p-4">
             Nombre del colaborador
