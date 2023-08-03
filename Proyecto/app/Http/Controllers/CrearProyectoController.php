@@ -16,7 +16,7 @@ class CrearProyectoController extends Controller
     //
     public function index() {
         
-        return view('crearcolaborador');
+        return view('crearproyecto');
     }
 
 
