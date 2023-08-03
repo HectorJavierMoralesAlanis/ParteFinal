@@ -33,7 +33,7 @@
         
         <div class="flex flex-row">
             @if(auth()->user()->id==1) 
-            <div class=" basis-1/2>
+            <div class=" basis-1/4>
                 <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800">
                     <div class="text-bg-100 text-xl">
                         <div class="p-2.5 mt-1 flex items-center">
