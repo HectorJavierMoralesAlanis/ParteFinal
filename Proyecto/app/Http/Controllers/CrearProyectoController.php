@@ -18,7 +18,6 @@ class CrearProyectoController extends Controller
         
         return view('crearproyecto');
     }
-
     public function store(Request $request){
         $this->validate($request,[
             'nombreproyecto' => "required|max:255",
@@ -45,6 +44,5 @@ class CrearProyectoController extends Controller
         $proyectos = DB::table('proyectos')->get();
         return view('proyectos')->with('proyectos',$proyectos);
     }
-
 }
 
