@@ -33,8 +33,8 @@ class CrearProyectoController extends Controller
             'nombreteam'=> "required"
         ]);
         proyectos::create([
-            'nombreproyectos' => $request->nombreproyectos,
-            'nombreclientes' => $request->nombrecliente,
+            'nombreproyecto' => $request->nombreproyecto,
+            'nombrecliente' => $request->nombrecliente,
             'descripcionproyecto' => $request->descripcionproyecto,
             'fechaempezado' => $request->fechaempezado,
             'fechaterminado' => $request->fechaterminado,
