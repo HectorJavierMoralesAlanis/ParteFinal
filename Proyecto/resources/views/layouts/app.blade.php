@@ -30,7 +30,6 @@
                     </nav>
             </div>
         </header>
-        
         <div class="flex flex-row">
             @if(auth()->user()->id==1) 
             <div class=" basis-1/4>
