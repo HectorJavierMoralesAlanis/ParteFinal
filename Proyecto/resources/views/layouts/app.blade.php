@@ -32,7 +32,7 @@
             </div>
         </header>
         <div class="flex flex-column h-full">
-            <div class="flex-initial w-64">
+            <div class="flex-initial w-64 h-full">
             @if(auth()->user()->id==1) 
             <div class="flex-initial w-64 h-full">
                 <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800">
