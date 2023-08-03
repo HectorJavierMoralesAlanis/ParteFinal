@@ -128,6 +128,7 @@
             </div>
         </aside>
         @endif
+        
         <div class="p-4 sm:ml-64">
             <!-- Contenido de las vistas -->
             <div class="w-[90%] max-w-md mx-auto">
