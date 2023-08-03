@@ -31,7 +31,7 @@
                     </nav>
             </div>
         </header>
-        <div class="flex flex-column">
+        <div class="flex flex-column h-full">
             <div class="p-4 sm:ml-64">
             @if(auth()->user()->id==1) 
             <aside class="fixed top-20 left-0 z-40 w-64 h-screen text-center transistion-transform-translate-x-full sm:translate-x-0 bg-neutral-900 shadow p-4 position: sticky;">
