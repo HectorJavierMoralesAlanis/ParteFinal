@@ -5,6 +5,7 @@
 @endsection
 
 @section('contenido')
+    <body class="row staff-grid-row">
         <div class="mb-5">
             <label for="name" class="mb-2 block uppercase text-gray-500 font-bold p-4">
             Nombre del colaborador
@@ -34,6 +35,7 @@
             </nav>
         </div>
 
+        <main class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 <!--Esta es una primer tarjeta-->
@@ -83,5 +85,7 @@
                         @endif
                 
             </div>
+        </main>
+    </body>
 
 @endsection
