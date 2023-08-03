@@ -31,7 +31,7 @@
                     </nav>
             </div>
         </header>
-        <div class="flex flex-column h-full">
+        <div class="flex flex-column">
             <div class="flex-initial w-64">
             @if(auth()->user()->id==1) 
             <div class="flex-initial w-64">
