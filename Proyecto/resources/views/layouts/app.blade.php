@@ -30,6 +30,7 @@
                     </nav>
             </div>
         </header>
+        
         <div class="flex flex-row">
             @if(auth()->user()->id==1) 
             <aside class="fixed top-20 left-0 z-40 h-screen text-center transistion-transform-translate-x-full sm:translate-x-0 bg-neutral-900 shadow p-4 position: sticky; basis-1/4">
