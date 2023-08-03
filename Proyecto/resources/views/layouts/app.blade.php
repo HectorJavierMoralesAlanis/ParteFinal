@@ -31,10 +31,10 @@
                     </nav>
             </div>
         </header>
-        <div class="flex flex-column flex-wrap">
+        <div class="flex flex-column">
             <div class="flex-initial w-64">
             @if(auth()->user()->id==1) 
-            <div class="flex-initial w-64 flex-nowrap">
+            <div class="flex-initial w-64">
                 <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800">
                     <div class="text-bg-100 text-xl">
                         <div class="p-2.5 mt-1 flex items-center">
