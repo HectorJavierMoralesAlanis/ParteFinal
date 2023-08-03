@@ -129,7 +129,7 @@
                 </div>
             </aside>
             @endif
-            <div class="shrink w-full h-14">
+            <div class="shrink w-full h-full">
                 <!-- Contenido de las vistas -->
                 <main>
                     <h2 class="font-black text-center text-3xl mb-10 text-black">
