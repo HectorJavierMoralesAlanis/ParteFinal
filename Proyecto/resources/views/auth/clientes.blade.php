@@ -13,6 +13,7 @@
                 </nav>
             </div>
         </header>
+        
         <section class="w-[90%] max-w-md mx-auto">
             <div class="bg-slate-400 shadow-2xl shadow-slate-400 rounded-md container mx-auto px-10">
                 <table class="bg-slate-200 shadow-xl shadow-slate-200 font-bold text-xl mb-10 rounded-md container mx-auto px-40 p-10">
