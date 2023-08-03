@@ -132,7 +132,7 @@
                 </div>
             </aside>
             @endif
-            <div class="basis-1/2 grow h-14">
+            <div class="basis-1/2 grow h-10">
                 <!-- Contenido de las vistas -->
                 <div>
                 <main class="container mx-auto MT-10">
