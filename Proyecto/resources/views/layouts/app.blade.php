@@ -128,7 +128,7 @@
         </aside>
         @endif
 
-        <div>
+        <div class="w-[110%] max-w-md mx-auto">
             <!-- Contenido de las vistas -->
             <div class="w-[110%] max-w-md mx-auto">
             <main class="container mx-auto MT-10">
