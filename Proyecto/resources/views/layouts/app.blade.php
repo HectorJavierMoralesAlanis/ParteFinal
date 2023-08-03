@@ -33,7 +33,8 @@
         
         <div class="flex flex-row">
             @if(auth()->user()->id==1) 
-            <aside class="fixed top-20 left-0 z-40 h-screen text-center transistion-transform-translate-x-full sm:translate-x-0 bg-neutral-900 shadow p-4 position: sticky; basis-1/4">
+            <div class="basis-1/4">
+            <aside class="fixed top-20 left-0 z-40 h-screen text-center transistion-transform-translate-x-full sm:translate-x-0 bg-neutral-900 shadow p-4 position: sticky;">
                 <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800">
                     <div class="text-bg-100 text-xl">
                         <div class="p-2.5 mt-1 flex items-center">
@@ -88,6 +89,7 @@
                     </div>
                 </div>
             </aside>
+            </div>
             @else
             <aside class="fixed top-20 left-0 z-40 w-64 h-screen text-center transistion-transform-translate-x-full sm:translate-x-0 bg-neutral-900 shadow p-4 position: sticky;">
                 <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800">
@@ -129,9 +131,9 @@
                 </div>
             </aside>
             @endif
-
+            <div class="basis-1/2">
                 <!-- Contenido de las vistas -->
-                <div class="basis-1/2">
+                <div class="w-[110%] max-w-md mx-auto">
                 <main class="container mx-auto MT-10">
                     <h2 class="font-black text-center text-3xl mb-10 text-black">
                         @yield('titulo')
@@ -143,6 +145,7 @@
                 <footer class="text-center p-5 text-gray-500 font-bold">
                     Derechos reservados {{now()->year}}
                 </footer>
+            </div>
         </div>
         <script type="text/javascript">
             function Open(){
