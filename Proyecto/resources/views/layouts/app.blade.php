@@ -130,7 +130,7 @@
             @endif
             <div class="shrink w-full h-14">
                 <!-- Contenido de las vistas -->
-                <main>
+                <main class="shrink w-full h-full">
                     <h2 class="font-black text-center text-3xl mb-10 text-black">
                         @yield('titulo')
                     </h2>
