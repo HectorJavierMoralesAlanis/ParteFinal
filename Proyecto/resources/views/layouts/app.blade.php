@@ -137,11 +137,12 @@
                     @yield('contenido')
                 </main>
                 @endauth
+                <footer class="text-center p-5 text-gray-500 font-bold">
+                    Derechos reservados {{now()->year}}
+                </footer>
             </div>
         </div>
-        <footer class="text-center p-5 text-gray-500 font-bold">
-            Derechos reservados {{now()->year}}
-        </footer>
+        
         <script type="text/javascript">
             function Open(){
                 document.querySelector('.sidebar').classList.toggle('left-[-300px]');
