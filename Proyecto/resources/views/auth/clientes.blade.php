@@ -5,7 +5,7 @@
 @endsection
 
 @section('contenido')
-    <div>
+    <div class="w-[90%]">
         <header>
             <div class="container mx-auto flex justify-between items-center">
                 <nav class="md:flex md:items-center md:justify-between">
