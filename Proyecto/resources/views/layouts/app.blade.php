@@ -131,7 +131,7 @@
             </aside>
             @endif
             </div>
-            <div class="flex-initial">
+            <div class="flex-initial w-[90%] w-full">
                 <!-- Contenido de las vistas -->
                 <div class="p-4 border-2 border-gray-200 rounded-lg dark:border-gray-700">
                 <main class="container mx-auto MT-10">
