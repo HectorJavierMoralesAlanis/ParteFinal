@@ -43,7 +43,7 @@ class CrearProyectoController extends Controller
             'liderproyecto' => $request->liderproyecto,
             'nombreteam' => $request->nombreteam,
         ]);
-        $proyectos = DB::table('proyectos');
+        $proyectos = DB::table('proyectos')->get();
         return view('proyectos')->with('proyectos',$proyectos);
     
     }
