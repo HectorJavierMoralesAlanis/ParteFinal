@@ -38,7 +38,7 @@ class CrearProyectoController extends Controller
             'nombreclientes' => $request->nombrecliente,
             'descripcionproyecto' => $request->descripcionproyecto,
             'fechaempezado' => $request->fechaempezado,
-            'fechaterminado' => $request->fechatermiando,
+            'fechaterminado' => $request->fechaterminado,
             'presupuesto' => $request->presupuesto,
             'prioridad' => $request->prioridad,
             'liderproyecto' => $request->liderproyecto,
