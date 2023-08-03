@@ -31,10 +31,10 @@
                     </nav>
             </div>
         </header>
-        
-        <div class="flex flex-row h-full">
+
+        <div class="grid grid-flow-col auto-cols-max">
             @if(auth()->user()->id==1) 
-            <div class="shrink">
+            <div>
                 <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800">
                     <div class="text-bg-100 text-xl">
                         <div class="p-2.5 mt-1 flex items-center">
@@ -130,7 +130,7 @@
                 </div>
             </aside>
             @endif
-            <div class="shrink w-full">
+            <div>
                 <!-- Contenido de las vistas -->
                 <div class="p-4 border-2 border-gray-200 rounded-lg dark:border-gray-700">
                 <main class="container mx-auto MT-10">
