@@ -30,7 +30,6 @@
                     </nav>
             </div>
         </header>
-        <div class="p-4 sm:ml-64">
         @if(auth()->user()->id==1) 
         <aside class="fixed top-20 left-0 z-40 h-screen text-center transistion-transform-translate-x-full sm:translate-x-0 bg-neutral-900 shadow p-4 position: sticky; w-[70%] max-w-md mx-auto">
             <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800">
@@ -139,15 +138,7 @@
                 @yield('contenido')
             </main>
             </div>
-        @endauth
-        @guest
-            <div class="container mx-auto MT-10">
-                <h2 class="font-black text-center text-3xl mb-10 text-black">
-                    @yield('titulo')
-                </h2>
-                @yield('contenido')
-            </div>
-        @endguest
+            @endauth
             <footer class="text-center p-5 text-gray-500 font-bold">
                 Derechos reservados {{now()->year}}
             </footer>
