@@ -30,10 +30,9 @@
                     </nav>
             </div>
         </header>
-
         <div class="flex flex-row">
             @if(auth()->user()->id==1) 
-            <div class="shrink-0 h-full">
+            <div class="shrink h-full ">
                 <div class="h-full px-3 py-4 overflow-y-auto bg-neutral-900 dark:bg-neutral-800">
                     <div class="text-bg-100 text-xl">
                         <div class="p-2.5 mt-1 flex items-center">
@@ -129,7 +128,7 @@
                 </div>
             </aside>
             @endif
-            <div class="shrink w-full h-full">
+            <div class="shrink w-full h-14">
                 <!-- Contenido de las vistas -->
                 <main>
                     <h2 class="font-black text-center text-3xl mb-10 text-black">
