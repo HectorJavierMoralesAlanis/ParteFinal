@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
 
-class CrearProyectosController extends Controller
+class CrearProyectoController extends Controller
 {
     //
     public function index() {
