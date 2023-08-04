@@ -18,4 +18,9 @@ class Cliente extends Model
         'telefonoC',
         'compNombreC',
     ];
+
+    //Relacion de cliente a Proyectos
+    public function proyectos(){
+        return $this->hasMany(proyectos::class);
+    }
 }

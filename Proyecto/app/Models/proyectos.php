@@ -11,7 +11,7 @@ class proyectos extends Model
 
     protected $fillable=[
         'nombreproyecto',
-        'nombrecliente',
+        'clientes',
         'descripcionproyecto',
         'fechaempezado',
         'fechaterminado',
@@ -20,4 +20,9 @@ class proyectos extends Model
         'liderproyecto',
         'nombreteam'
     ];
+    
+    //Proyecto a cliente
+    public function cliente(){
+        return $this->belongsTo(Cliente::class);
+    }
 }
