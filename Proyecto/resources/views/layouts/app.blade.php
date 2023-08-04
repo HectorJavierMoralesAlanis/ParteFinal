@@ -145,6 +145,18 @@
                 </main>
                 </div>
             @endauth
+            @guest
+            <div class="flex-initial w-full">
+                <!-- Contenido de las vistas -->
+                <div class="p-4 border-2 border-gray-200 rounded-lg dark:border-gray-700">
+                <main class="container mx-auto MT-10">
+                    <h2 class="font-black text-center text-3xl mb-10 text-black">
+                        @yield('titulo')
+                    </h2>
+                    @yield('contenido')
+                </main>
+                </div>
+            @endguest
                 <footer class="text-center p-5 text-gray-500 font-bold">
                     Derechos reservados {{now()->year}}
                 </footer>
