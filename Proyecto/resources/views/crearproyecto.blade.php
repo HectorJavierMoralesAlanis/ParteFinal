@@ -34,13 +34,18 @@
                 <label for="nombrecliente" class="mb-2 block uppercase text-gray-500 font-bold">
                 Ingresa el nombre del cliente:
                 </label>
-                <input 
+                <select 
                     id="nombrecliente"
                     name="nombrecliente"
                     type="text"
                     placeholder="Nombre del cliente"
                     class="border p-3 w-full rounded-lg"
-                />
+                >
+                    <option selected>Clientes</option>
+                    @foreach()
+                    <!--Poner los clientes-->
+                    @endforeach
+                </select>
 
             </div>
 
