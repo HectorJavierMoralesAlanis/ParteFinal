@@ -21,7 +21,7 @@ class CrearProyectoController extends Controller
     public function store(Request $request){
         $this->validate($request,[
             'nombreproyecto' => "required|max:255",
-            'nombrecliente' => "required|max:255",
+            'cliente_id' => "required|max:255",
             'descripcionproyecto'=> "required",
             'fechaempezado'=> "required",
             'fechaterminado' => "required",
@@ -32,7 +32,7 @@ class CrearProyectoController extends Controller
         ]);
         proyectos::create([
             'nombreproyecto' => $request->nombreproyecto,
-            'nombrecliente' => $request->nombrecliente,
+            'cliente_id' => $request->cliente_id,
             'descripcionproyecto' => $request->descripcionproyecto,
             'fechaempezado' => $request->fechaempezado,
             'fechaterminado' => $request->fechaterminado,

@@ -31,12 +31,12 @@
             </div>
 
             <div class="mb-5">
-                <label for="nombrecliente" class="mb-2 block uppercase text-gray-500 font-bold">
+                <label for="cliente_id" class="mb-2 block uppercase text-gray-500 font-bold">
                 Ingresa el nombre del cliente:
                 </label>
                 <select 
-                    id="nombrecliente"
-                    name="nombrecliente"
+                    id="cliente_id"
+                    name="cliente_id"
                     type="text"
                     placeholder="Nombre del cliente"
                     class="border p-3 w-full rounded-lg"
