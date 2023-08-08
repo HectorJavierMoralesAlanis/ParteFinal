@@ -11,7 +11,7 @@ class proyectos extends Model
 
     protected $fillable=[
         'nombreproyecto',
-        'cliente_id',
+        'clientes',
         'descripcionproyecto',
         'fechaempezado',
         'fechaterminado',

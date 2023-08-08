@@ -32,7 +32,7 @@ class CrearProyectoController extends Controller
         ]);
         proyectos::create([
             'nombreproyecto' => $request->nombreproyecto,
-            'cliente_id' => $request->cliente_id,
+            'clientes' => $request->cliente_id,
             'descripcionproyecto' => $request->descripcionproyecto,
             'fechaempezado' => $request->fechaempezado,
             'fechaterminado' => $request->fechaterminado,
