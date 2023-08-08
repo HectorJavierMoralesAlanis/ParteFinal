@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nombreproyecto');
             #$table->string('nombrecliente');
-            $table->foreign('clientes')->constrained()->onDelete('cascade');
+            $table->foreign('clientes_id')->constrained()->onDelete('cascade');
             $table->text('descripcionproyecto');
             $table->text('fechaempezado');
             $table->string('fechaterminado');
