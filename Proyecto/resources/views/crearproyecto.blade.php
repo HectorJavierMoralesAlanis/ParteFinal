@@ -44,7 +44,6 @@
                     <option selected>Clientes</option>
                     @foreach($clientes as $cliente)
                         <option value="{{$cliente->id}}">{{$cliente->nombrecliente}}</option>
-                    <!--Poner los clientes-->
                     @endforeach
                 </select>
 
