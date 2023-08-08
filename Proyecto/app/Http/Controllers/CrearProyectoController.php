@@ -44,5 +44,11 @@ class CrearProyectoController extends Controller
         $proyectos = DB::table('proyectos')->get();
         return view('proyectos')->with('proyectos',$proyectos);
     }
+    public function showProy(proyectos $proyectos){
+        return view('proyecto.showProy',[
+            'proyectos' => $proyectos::all()
+        ]);
+    }
+
 }
 

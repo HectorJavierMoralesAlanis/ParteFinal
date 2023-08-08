@@ -80,5 +80,9 @@ Route::get('/colaboradores', [colaboradoresController::class, 'index'])->name('c
 //Route::get('/colaboradores', [colaboradoresController::class, 'show'])->name('colaboradores');
 //Route::get('/{colaborador:usernamecolaborador}',[colaboradoresController::class, 'showColab'])->name('colaboradores.show');
 
+
 Route::get('/crearcolaborador', [CrearColaboradorController::class, 'index'])->name('crearcolaborador');
 Route::post('/crearcolaborador',[CrearColaboradorController::class, 'store']);
+
+Route::get('/colaboradores/{colaborador:usernamecolaborador}',[colaboradoresController::class, 'showColab'])->name('colaborador.showColab');
+Route::get('/proyectos/{proyecto:id}',[proyectosController::class, 'showProy'])->name('proyecto.showProy');

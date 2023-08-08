@@ -38,71 +38,7 @@
         
             <main class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                <!--Esta es una primer tarjeta-->
-                <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="font-bold text-center">
-                        <a href="#">Titulo del proyecto</a>        
-                    </h3>
-                    <div class="font-bold text-center">
-                        1 tareas abiertas, 9 tareas completos...
-                    </div>
-                    <div class="font-light text-center">
-                        Descripcion del proyecto en tarjeta...
-                    </div>
-                    <div class="font-bold text-left">
-                        Deadline:
-                    </div>
-                    <div class="font-light text-left">
-                        fecha...
-                    </div>
-                    <div class="font-bold text-left">
-                        Lider de proyecto:
-                    </div>
-                    <div class="font-light text-left">
-                        Nombre del administrador...
-                    </div>
-                    <div class="font-bold text-left">
-                        Conformado por:
-                    </div>
-                    <div class="font-light text-left">
-                        integrantes...
-                    </div>
-                </div>
-                <!--Aqui termina primer tarjeta-->
-                <!--Esta es una segunda tarjeta-->
-                <div class="bg-white rounded-lg shadow p-6">
-                    <h3 class="font-bold text-center">
-                        <a href="#">Titulo del proyecto</a>        
-                    </h3>
-                    <div class="font-bold text-center">
-                        3 tareas abiertas, 7 tareas completos...
-                    </div>
-                    <div class="font-light text-center">
-                        Descripcion del proyecto en tarjeta...
-                    </div>
-                    <div class="font-bold text-left">
-                        Deadline:
-                    </div>
-                    <div class="font-light text-left">
-                        fecha...
-                    </div>
-                    <div class="font-bold text-left">
-                        Lider de proyecto:
-                    </div>
-                    <div class="font-light text-left">
-                        Nombre del administrador...
-                    </div>
-                    <div class="font-bold text-left">
-                        Conformado por:
-                    </div>
-                    <div class="font-light text-left">
-                        integrantes...
-                    </div> 
-                </div>
-                <!--Aqui termina segunda tarjeta-->
-
                 <!-- RECIBIR Y MOSTRAR LOS POSTS DE PUBLICACION-->
-                
                 @if ($proyectos->count() )
                     @foreach ($proyectos as $proyecto)
                     <div class="bg-white rounded-lg shadow p-6">
@@ -110,6 +46,7 @@
                             <img src="{{ asset('img/colaboradores/avatar-12.jpg')}}" alt="imagen de perfil"> 
                         </div>
                         <h4 class="user-name m-t-10 mb-0 text-ellipsis font-bold text-center">
+                            <a href="{{route ('proyecto.showProy', ['proyecto'=>$proyecto   ])}}">
                             <a href="#">{{  $proyecto->nombreproyecto   }}</a>        
                         </h4>
                         <div class="small text-muted text-center">
@@ -118,10 +55,10 @@
                         <div class="small text-muted text-center">Deadline:
                             <span>{{    $proyecto->fechaterminado    }}</span>
                         </div>
-                        <div class="small text-muted text-center">Deadline:
+                        <div class="small text-muted text-center">Lider del proyecto:
                             <span>{{    $proyecto->liderproyecto    }}</span>
                         </div>
-                        <div class="small text-muted text-center">Deadline:
+                        <div class="small text-muted text-center">Team:
                             <span>{{    $proyecto->nombreteam    }}</span>
                         </div>
                     </div>
