@@ -42,7 +42,8 @@
                     class="border p-3 w-full rounded-lg"
                 >
                     <option selected>Clientes</option>
-                    @foreach()
+                    @foreach($clientes as $cliente)
+                        <option value="{{$cliente->id}}">{{$cliente->nombrecliente}}</option>
                     <!--Poner los clientes-->
                     @endforeach
                 </select>
