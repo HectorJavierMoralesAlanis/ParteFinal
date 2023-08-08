@@ -15,8 +15,8 @@ class CrearProyectoController extends Controller
 {
     //
     public function index() {
-        
-        return view('crearproyecto');
+        $clientes = DB::table('proyectos')->get();
+        return view('crearproyecto')->with('clientes',$clientes);
     }
     public function store(Request $request){
         $this->validate($request,[
