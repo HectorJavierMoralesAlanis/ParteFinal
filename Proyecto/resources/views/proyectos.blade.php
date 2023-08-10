@@ -46,7 +46,7 @@
                             <img src="{{ asset('img/colaboradores/avatar-12.jpg')}}" alt="imagen de perfil"> 
                         </div>
                         <h4 class="user-name m-t-10 mb-0 text-ellipsis font-bold text-center">
-                            <a href="#">{{  $proyecto->nombreproyecto   }}</a>        
+                            <a href="{{route('mostrarProyecto')->with($proyecto)}}">{{  $proyecto->nombreproyecto   }}</a>        
                         </h4>
                         <div class="small text-muted text-center">
                             <span>{{    $proyecto->descripcionproyecto    }}</span>
