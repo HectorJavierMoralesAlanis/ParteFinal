@@ -68,10 +68,10 @@ Route::get('/crearproyecto', [CrearProyectoController::class, 'index'])->name('c
 //Ruta para almacenar el proyecto
 Route::post('/crearproyecto',[CrearProyectoController::class, 'store']);
 
-
 //Route::get('/Verproyectos',[CrearProyectoController::class,'showProy'])->name('mostrarProyecto');
 //Ruta para mostrar los colaboradores
 //Route::get('/colaboradores', [colaboradoresController::class, 'index'])->name('colaboradores');
+
 
 //Route::post('/crearcolaborador',[CrearColaboradorController::class, 'store']);
 
