@@ -17,7 +17,6 @@ class proyectosController extends Controller
     public function show(proyectos $proyectos){
         return view('proyectos',[
             'proyectos' => $proyectos::all()
-            
         ]);
     }
 

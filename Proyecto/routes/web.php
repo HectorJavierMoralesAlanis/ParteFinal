@@ -58,11 +58,14 @@ Route::get('/inicio',[DcolaboradorController::class,'index'])->name('dcolaborado
 
 //Ruta para mostrar los proyectos
 Route::get('/proyectos', [proyectosController::class, 'index'])->name('proyectos');
+Route::get('/proyectos', [proyectosController::class, 'show'])->name('proyectos');
+
+
 
 //Ruta para mostar cada proyecto
 Route::get('/proyectos/{proyecto}',[proyectosController::class, 'showProy'])->name('proyecto.showProy');
 
-//Ruta para la creacion de proyectos
+//Ruta para la creacion de proyec   tos
 Route::get('/crearproyecto', [CrearProyectoController::class, 'index'])->name('crearproyecto');
 
 //Ruta para almacenar el proyecto
