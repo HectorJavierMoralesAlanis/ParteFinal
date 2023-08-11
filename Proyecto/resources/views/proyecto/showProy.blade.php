@@ -11,7 +11,7 @@
                 <img src="{{ asset('img/colaboradores/proyectos.avif')}}" alt="imagen de perfil" width="400" height="400"> 
             </div>
             <h4 class="user-name m-t-10 mb-0 text-ellipsis font-bold text-center">
-                    Nombre del proyecto: {{ $proyecto->nombreproyecto}}  
+                    Nombre del proyecto: {{ $proyectos->nombreproyecto}}  
             </h4>
             <div class="small text-muted text-center">
                     Nombre del cliente: 
