@@ -10,8 +10,8 @@ class proyectosController extends Controller
 {
     //
     public function index() {
-        $proyectos = DB::table('proyectos')->get();
-        return view('proyectos')->with('proyectos',$proyectos);
+        ##$proyectos = DB::table('proyectos')->get();
+        return view('proyectos');#->with('proyectos',$proyectos);
     }
 
     public function show(proyectos $proyectos){
