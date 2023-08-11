@@ -9,13 +9,16 @@ use Illuminate\Support\Facades\DB;
 class proyectosController extends Controller
 {
     //
-    public function index() {
+    public function index(proyectos $proyectos) {
         ##$proyectos = DB::table('proyectos')->get();
         return view('proyectos');#->with('proyectos',$proyectos);
     }
 
     public function show(proyectos $proyectos){
-        return view('proyectos')->with('proyectos',$proyectos);
+        return view('proyectos',[
+            'proyectos' => $proyectos::all()
+            
+        ]);
     }
 
     public function showProy(proyectos $proyectos){
