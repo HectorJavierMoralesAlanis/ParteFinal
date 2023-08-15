@@ -33,5 +33,4 @@ class proyectosController extends Controller
         #    'proyectos' => $proyectoN::all()
         #]);
     }
-
 }
