@@ -16,8 +16,9 @@
             @foreach($proyectos as $proyecto)
 
                 @if($proyecto->id == $id)
-                
+
                     <h4 class="user-name m-t-10 mb-0 text-ellipsis font-bold text-center">
+                        
                             Nombre del proyecto: {{ $proyecto->nombreproyecto }}  
                     </h4>
                     <div class="small text-muted text-center">
