@@ -20,7 +20,7 @@ class proyectosController extends Controller
     }
     public function showProy(proyectos $proyectos,$proyecto){
         $proyectoN = $proyecto;
-        dd($proyectos->nombreproyecto);
+        dd($proyectos->nombreproyecto::all());
         foreach($proyectos as $pro):
             $id=$pro;
             if($id == $proyecto):
