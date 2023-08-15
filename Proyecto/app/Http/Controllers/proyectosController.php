@@ -28,7 +28,7 @@ class proyectosController extends Controller
             endif;
         endforeach;
         return view('proyecto.showProy',[
-            'proyectos' => $proyectoN::all()
+            'proyectos' => $proyecto::all()
         ]);
     }
 
