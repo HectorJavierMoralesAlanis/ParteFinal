@@ -22,7 +22,6 @@
                             Nombre del cliente: {{ $proyecto->clientes}}
                     </div>
             @endforeach
-
         </div>    
     </div>
 @endsection
