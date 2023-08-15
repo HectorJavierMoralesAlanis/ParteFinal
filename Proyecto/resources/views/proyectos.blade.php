@@ -34,6 +34,7 @@
                 <a class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer font-bold text-white rounded-lg p-5" href="{{ route('crearproyecto') }}">Crear proyecto</a>
             </nav>
         </div>
+
         
             <main class="col-md-4 col-sm-6 col-12 col-lg-4 col-xl-3">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -45,7 +46,7 @@
                             <img src="{{ asset('img/colaboradores/avatar-12.jpg')}}" alt="imagen de perfil"> 
                         </div>
                         <h4 class="user-name m-t-10 mb-0 text-ellipsis font-bold text-center">
-                            <a href="{{route ('proyecto.showProy', ['proyecto'=>$proyecto[0]])}}"> {{  $proyecto->nombreproyecto   }}</a>       
+                            <a href="{{route ('proyecto.showProy', ['proyecto'=>$proyecto])}}"> {{  $proyecto->nombreproyecto   }}</a>       
                         </h4>
                         <div class="small text-muted text-center">
                             <span>{{    $proyecto->descripcionproyecto    }}</span>
