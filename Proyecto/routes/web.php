@@ -84,6 +84,7 @@ Route::post('/crearproyecto',[CrearProyectoController::class, 'store']);
 //Ruta para almacenar los colaboradores
 //Route::post('/crearcolaborador',[CrearColaboradorController::class, 'store']);
 
+
 Route::get('/colaboradores', [colaboradoresController::class, 'index'])->name('colaboradores');
 Route::get('/colaboradores', [colaboradoresController::class, 'show'])->name('colaboradores');
 //Route::get('/{colaborador:usernamecolaborador}',[colaboradoresController::class, 'showColab'])->name('colaboradores.show');
