@@ -25,7 +25,7 @@ class colaboradoresController extends Controller
     }
     public function showColab(colaboradores $colaboradores,$colaborador){
         return view('colaborador.showColab',[
-            'colaborador' => $colaboradores::all(),'id' => $colaborador
+            'colaboradores' => $colaboradores::all(),'id' => $colaborador
 /*
             $colaboradores = DB::table('colaboradores')->get();
             return view('colaborador.showColab')->with('colaboradores',$colaboradores);
