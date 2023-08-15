@@ -26,8 +26,9 @@
                     <div class="small text-muted text-center">
 
                             Nombre del cliente: {{ $proyecto->clientes}}
-                            
+
                     </div>
+                    
             @endforeach
         </div>    
     </div>
