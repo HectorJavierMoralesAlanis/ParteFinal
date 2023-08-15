@@ -24,12 +24,13 @@ class proyectosController extends Controller
             $id=$pro;
             if($id == $proyecto):
                 $proyectoN = $pro;
+                dd($proyectoN);
                 break;
             endif;
         endforeach;
-        return view('proyecto.showProy',[
-            'proyectos' => $proyectoN::all()
-        ]);
+        #return view('proyecto.showProy',[
+        #    'proyectos' => $proyectoN::all()
+        #]);
     }
 
 }
