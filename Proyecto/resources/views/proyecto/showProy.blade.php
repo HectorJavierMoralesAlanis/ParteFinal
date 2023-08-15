@@ -8,6 +8,7 @@
 @section('titulo')
     Datos del proyecto
 @endsection 
+
 @section('contenido')
     <div class="md:flex md:justify-center md:gap-10 md:items-center">
         <div class="bg-white rounded-lg shadow p-6">
