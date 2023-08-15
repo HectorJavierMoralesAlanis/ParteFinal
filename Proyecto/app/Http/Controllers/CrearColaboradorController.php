@@ -44,6 +44,8 @@ class CrearColaboradorController extends Controller
             'designacioncolaborador' => $request->designacioncolaborador,
 
         ]);
+        return redirect()->route('colaboradores');
+
 
         $colaboradores = DB::table('colaboradores')->get();
         return view('colaboradores')->with('colaboradores',$colaboradores);

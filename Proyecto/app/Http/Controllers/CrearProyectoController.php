@@ -41,6 +41,8 @@ class CrearProyectoController extends Controller
             'liderproyecto' => $request->liderproyecto,
             'nombreteam' => $request->nombreteam,
         ]);
+        
+        return redirect()->route('proyectos');
         $proyectos = DB::table('proyectos')->get();
         return view('proyectos')->with('proyectos',$proyectos);
     }
