@@ -12,6 +12,7 @@
             </div>
 
             @foreach($colaboradores as $colaborador)
+            
                 @if($colaborador-> == $id)
                     <h4 class="user-name m-t-10 mb-0 text-ellipsis font-bold text-center">
                             Nombre:   {{$colaborador->nombrecolaborador}} 
