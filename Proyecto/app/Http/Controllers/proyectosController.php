@@ -18,10 +18,10 @@ class proyectosController extends Controller
             'proyectos' => $proyectos::all()
         ]);
     }
-
+    
     public function showProy(proyectos $proyectos,$proyecto){
         $proyectoN = $proyecto;
-        dd($proyectos->attributes());
+        dd($proyectos->getAttributes());
         foreach($proyectos as $pro):
             $id=$pro;
             if($id == $proyecto):
