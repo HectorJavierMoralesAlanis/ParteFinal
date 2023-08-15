@@ -13,7 +13,6 @@ class proyectosController extends Controller
         ##$proyectos = DB::table('proyectos')->get();
         return view('proyectos');#->with('proyectos',$proyectos);
     }
-
     public function show(proyectos $proyectos){
         return view('proyectos',[
             'proyectos' => $proyectos::all()
