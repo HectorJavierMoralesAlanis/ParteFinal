@@ -3,7 +3,6 @@
     echo $id;
 ?>
 @extends('layouts.app')
-
 @section('titulo')
     Datos del proyecto
 @endsection 
