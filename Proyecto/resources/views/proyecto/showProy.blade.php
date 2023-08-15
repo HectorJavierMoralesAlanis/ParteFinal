@@ -2,7 +2,6 @@
     $id=$_GET['proyecto'];
     echo $id;
 ?>
-
 @extends('layouts.app')
 
 @section('titulo')
