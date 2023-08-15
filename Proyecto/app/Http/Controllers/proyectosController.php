@@ -21,14 +21,14 @@ class proyectosController extends Controller
     public function showProy(proyectos $proyectos,$proyecto){
         $proyectoN = $proyecto;
         foreach($proyectos as $pro):
-            $id=$pro->id;
+            $id=$pro;
             if($id == $proyecto):
                 $proyectoN = $pro;
                 break;
             endif;
         endforeach;
         return view('proyecto.showProy',[
-            'proyectos' => $proyecto::all()
+            'proyectos' => $proyectoN::all()
         ]);
     }
 
