@@ -19,7 +19,6 @@ class colaboradoresController extends Controller
     public function show(colaboradores $colaboradores){
         return view('colaboradores',[
             'colaboradores' => $colaboradores::all()
-            
         ]);
         //dd('ola');
     }
