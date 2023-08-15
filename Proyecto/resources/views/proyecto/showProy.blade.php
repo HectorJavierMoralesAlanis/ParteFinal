@@ -1,6 +1,6 @@
 <?php 
-    $id=GET['proyecto']
-    echo $id
+    $id=GET['proyecto'];
+    echo $id;
 ?>
 @extends('layouts.app')
 
