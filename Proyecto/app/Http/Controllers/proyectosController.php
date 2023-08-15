@@ -20,9 +20,9 @@ class proyectosController extends Controller
         ]);
     }
 
-    public function showProy(proyectos $proyectos){
+    public function showProy($proyecto){
         return view('proyecto.showProy',[
-            'proyectos' => $proyectos::all()
+            'proyectos' => $proyecto::all()
         ]);
     }
 
