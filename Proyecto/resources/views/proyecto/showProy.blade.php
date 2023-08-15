@@ -2,6 +2,7 @@
     $id=$_GET['id'];
     echo $id;
 ?>
+
 @extends('layouts.app')
 
 @section('titulo')
