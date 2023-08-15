@@ -1,5 +1,5 @@
 <?php 
-    $id=$_GET['proyecto'];
+    $id=$_GET['id'];
     echo $id;
 ?>
 @extends('layouts.app')
