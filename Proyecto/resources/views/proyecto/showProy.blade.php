@@ -1,5 +1,5 @@
 <?php 
-    $id=GET['proyecto'];
+    $id=$_GET['proyecto'];
     echo $id;
 ?>
 
