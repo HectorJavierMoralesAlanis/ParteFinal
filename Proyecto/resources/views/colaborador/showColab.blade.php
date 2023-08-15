@@ -21,6 +21,7 @@
                             Designacion: {{$colaborador->designacioncolaborador}}
                     </div>
                 @endif
+                
             @endforeach
             
         </div>        
