@@ -20,6 +20,6 @@ class ClienteController extends Controller
         #$clientes= $clientesDB[$id];
         #dd($clientes);
         $clientes->delete();   
-        #return redirect()->route('clientes');
+        return redirect()->route('clientes');
     }
 }
