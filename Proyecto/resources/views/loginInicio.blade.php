@@ -58,11 +58,10 @@
             />
         </form>
     </div>
-
+</div>
     <footer>
         <h4>Integrantes</h4>
         <p>Alex Guillermo Castillo Nava</p>
         <p>HectorJavierMorales Alanis</p>
     </footer>
-</div>
 @endsection
