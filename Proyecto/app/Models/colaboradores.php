@@ -20,7 +20,6 @@ class colaboradores extends Model
         'companiacolaborador',
         'departamentocolaborador',
         'designacioncolaborador'
-
     ];
     
     protected $hidden = [
