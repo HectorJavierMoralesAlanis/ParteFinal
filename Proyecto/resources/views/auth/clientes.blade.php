@@ -33,11 +33,9 @@
                         <td>{{$cliente->emailC}}</td>
                         <td>{{$cliente->compNombreC}}</td>
                         <td><a class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer uppercase font-bold w-full p-3 text-white rounded-lg">Editar</a></td>
-                        <td><form href="{{route('cliente.destroy',['cliente'=>$cliente->id])}}"> 
-                            <button class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer uppercase font-bold w-full p-3 text-white rounded-lg" type="submit">
+                        <td><a href="{{route('cliente.destroy',['cliente'=>$cliente->id])}}" class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer uppercase font-bold w-full p-3 text-white rounded-lg">
                                 Eliminar 
-                            </button>
-                        </form></td>
+                        </a></td>
                     </tr>
                     @endforeach
                 </tbody>
