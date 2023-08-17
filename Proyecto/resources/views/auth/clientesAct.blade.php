@@ -55,11 +55,11 @@
                     @enderror
                 </div>
                 <div class="mb-5">
-                    <label for="usernameC" class="mb-2 black uppercase text-gray-500 font-bold">
+                    <label for="username" class="mb-2 black uppercase text-gray-500 font-bold">
                         Username del cliente
                     </label>
                     <input
-                        id="usernameC"
+                        id="username"
                         name="username"
                         type="text"
                         placeholder="{{$clientes->username}}"
