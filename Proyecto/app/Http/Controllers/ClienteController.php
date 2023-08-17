@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cliente;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -12,5 +13,9 @@ class ClienteController extends Controller
         
         $clientes = DB::table('clientes')->get();
         return view('auth.clientes')->with('clientes',$clientes);
+    }
+    public function destroy(Cliente $cliente){
+        $cliente->delete();   
+        return redirect()->route('clientes');
     }
 }

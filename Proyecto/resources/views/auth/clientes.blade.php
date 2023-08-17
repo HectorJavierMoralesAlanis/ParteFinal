@@ -10,6 +10,12 @@
             <div class="container mx-auto flex justify-between items-center">
                 <nav class="md:flex md:items-center md:justify-between">
                     <a href="{{route('registroClientes')}}" class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer uppercase font-bold w-full p-3 text-white rounded-lg">Agregar nuevo cliente</a>
+                    <a class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer uppercase font-bold w-full p-3 text-white rounded-lg">
+                        Editar
+                    </a>
+                    <a class>
+                        Eliminar
+                    </a>
                 </nav>
             </div>
         </header>
@@ -32,6 +38,14 @@
                         <td>{{$cliente->telefonoC}}</td>
                         <td>{{$cliente->emailC}}</td>
                         <td>{{$cliente->compNombreC}}</td>
+                        <td><a class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer uppercase font-bold w-full p-3 text-white rounded-lg">Editar</a></td>
+                        <td><form action="{{route('clientes.destroy',$cliente)}}" method="POST"> 
+                            @csrf
+                            @method('delete')
+                            <button class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer uppercase font-bold w-full p-3 text-white rounded-lg" type="submit">
+                                Eliminar 
+                            </button>
+                        </form></td>
                     </tr>
                     @endforeach
                 </tbody>
