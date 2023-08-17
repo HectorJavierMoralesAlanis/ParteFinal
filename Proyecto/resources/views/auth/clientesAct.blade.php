@@ -159,6 +159,7 @@
                         </p>
                     @enderror
                 </div>
+                
                 <div class="mb-5">
                     <label for="compNombreC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Nombre de la compañia del cliente
