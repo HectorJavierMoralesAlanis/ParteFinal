@@ -33,7 +33,6 @@ class CrearColaboradorController extends Controller
             'departamentocolaborador'=> "required",
             'designacioncolaborador'=> "required",
         ]);
-
         User::create([
             'nombrecolaboarador' => $request->nombrecolaborador,
             'usernamecolaborador' => $request->usernamecolaborador,
