@@ -167,7 +167,7 @@
                         id="compNombreC"
                         name="compNombreC"
                         type="text"
-                        placeholder="{{$clientes->comNombreC}}"
+                        placeholder="{{$clientes->compNombreC}}"
                         class="border p-2 w-full rounded tg
                         @error('compNombreC')
                             border-red-500
