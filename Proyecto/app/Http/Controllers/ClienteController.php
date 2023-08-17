@@ -16,10 +16,10 @@ class ClienteController extends Controller
         return view('auth.clientes')->with('clientes',$clientes);
     }
     public function destroy(Cliente $clientes,$id){
-        $clientesDB = DB::table('clientes')->get();
-        $clientes= $clientesDB[$id];
-        #dd($clientes);
-        $clientes->destroy();   
+        #$clientesDB = DB::table('clientes')->get();
+        #$clientes= $clientesDB[$id];
+        dd($clientes);
+        #$clientes->destroy();   
         #return redirect()->route('clientes');
     }
 }
