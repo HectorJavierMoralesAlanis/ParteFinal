@@ -18,8 +18,8 @@ class ClienteController extends Controller
     public function destroy(Cliente $clientes,$id){
         $clientesDB = DB::table('clientes')->get();
         $clientes= $clientesDB[$id];
-        dd($clientes);
-        #$clientes->delete();   
+        #dd($clientes);
+        $clientes->destroy();   
         #return redirect()->route('clientes');
     }
 }
