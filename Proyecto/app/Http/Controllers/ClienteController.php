@@ -36,7 +36,7 @@ class ClienteController extends Controller
         $cliente->apellidoC=$request->apellidoC;
         $cliente->username=$request->username;
         $cliente->emailC=$request->emailC;
-        $cliente->pasword=$request->passwordC;
+        $cliente->pasword=$request->password;
         $cliente->telefonoC=$request->telefonoC;
         $cliente->compNombreC=$request->compNombreC;
         $cliente->save();
