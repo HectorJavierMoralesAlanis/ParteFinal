@@ -21,7 +21,6 @@ class ClienteController extends Controller
         $cliente->delete();   
 
         return redirect()->route('clientes');
-        
-    }
 
+    }
 }
