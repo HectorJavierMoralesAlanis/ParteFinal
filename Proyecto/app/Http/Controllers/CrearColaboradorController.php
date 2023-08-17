@@ -35,6 +35,7 @@ class CrearColaboradorController extends Controller
         ]);
         User::create([
             'name' => $request->nombrecolaborador,
+            'username' => $request->usernamecolaborador,
             'email' => $request->correocolaborador,
             'password' => Hash::make($request->passwordcolaborador),
             'password_confirmation'=>$request->passwordcolaborador,
