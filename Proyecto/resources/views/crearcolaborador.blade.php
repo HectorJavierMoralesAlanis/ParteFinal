@@ -11,6 +11,19 @@
         <form action="{{ route('crearcolaborador')}}" method="POST" novalidate>
             @csrf
             <div class="mb-5">
+                <label for="correocolaborador" class="mb-2 block uppercase text-gray-500 font-bold">
+                Ingresa el correo electronico:
+                </label>
+                <input 
+                    id="correocolaborador"
+                    name="correocolaborador"
+                    type="text"
+                    placeholder="Correo del colaborador"
+                    class="border p-3 w-full rounded-lg"
+                />
+            </div>
+
+            <div class="mb-5">
                 <label for="nombrecolaborador" class="mb-2 block uppercase text-gray-500 font-bold">
                 Ingresa el nombre del colaborador:
                 </label>
@@ -63,6 +76,18 @@
                 />
             </div>
 
+            <div class="mb-5">
+                <label for="passwordcolaboarador_confirmation" class="mb-2 block uppercase text-gray-500 font-bold">
+                    Password Confirmation:
+                </label>
+                <input
+                    id="passwordcolaborador_confirmation"
+                    name="passwordcolaborador_confirmation"
+                    type="password"
+                    placeholde="Password Confirmation"
+                    class="border p-3 w-full roundend-lg"
+                />
+            </div>
             <div class="mb-5">
                 <label for="joindatecolaborador" class="mb-2 block uppercase text-gray-500 font-bold">
                 Fecha de ingreso:

@@ -8,6 +8,7 @@ use App\Models\colaboradores;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 
 class CrearColaboradorController extends Controller
 {
@@ -20,10 +21,12 @@ class CrearColaboradorController extends Controller
 
     public function store(Request $request){
         $this->validate($request,[
+            'correocolaborador' => "required|max:255",
             'nombrecolaborador' => "required|max:255",
             'apellidocolaborador' => "required|max:255",
             'usernamecolaborador'=> "required",
             'passwordcolaborador'=> "required",
+            'passwordcolaborador_confirmation'=>'',
             'joindatecolaborador' => "required",
             'telefonocolaborador' => "required",
             'companiacolaborador'=> "required",
@@ -32,6 +35,13 @@ class CrearColaboradorController extends Controller
 
         ]);
 
+        User::create([
+            'nombrecolaboarador' => $request->nombrecolaborador,
+            'usernamecolaborador' => $request->usernamecolaborador,
+            'correocolaborador' => $request->correocolaborador,
+            'passwordcolaborador' => Hash::make($request->passwordcolaborador),
+            'password_confirmation'=>$request->passwordcolaborador,
+        ]);
         colaboradores::create([
             'nombrecolaborador' => $request->nombrecolaborador,
             'apellidocolaborador' => $request->apellidocolaborador,
