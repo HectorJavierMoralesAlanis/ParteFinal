@@ -27,9 +27,9 @@ class ClienteController extends Controller
         #clientes=Cliente::find($id);
         $clientes = DB::table('clientes')->get();
         $clientes = $clientes[$id];
-        
+
         dd($clientes);
-        #return view('auth.clientesAct')->with("clientes",$clientes);
+        return view('auth.clientesAct')->with("clientes",$clientes);
     }
     public function update(Request $request,Cliente $cliente){
         $cliente->nombreC=$request->nombreC;
