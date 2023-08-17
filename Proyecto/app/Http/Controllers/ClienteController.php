@@ -23,8 +23,9 @@ class ClienteController extends Controller
         return redirect()->route('clientes');
     }
 
-    public function edit(Cliente $cliente){
-        return view('auth.clienteAct',compact($cliente));
+    public function edit(Cliente $cliente,$id){
+        $clientes=Cliente::find($id);
+        return view('auth.clienteAct',compact($clientes));
     }
 
     public function update(Request $request,Cliente $cliente){
