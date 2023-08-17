@@ -25,7 +25,8 @@ class ClienteController extends Controller
 
     public function edit(Cliente $clientes,$id){
         $clientes=Cliente::find($id);
-        return view('auth.clienteAct',compact($clientes));
+        dd($clientes);
+        #return view('auth.clienteAct',compact($clientes));
     }
     public function update(Request $request,Cliente $cliente){
         $cliente->nombreC=$request->nombreC;
