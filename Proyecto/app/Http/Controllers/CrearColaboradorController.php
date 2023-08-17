@@ -34,11 +34,10 @@ class CrearColaboradorController extends Controller
             'designacioncolaborador'=> "required",
         ]);
         User::create([
-            'nombrecolaboarador' => $request->nombrecolaborador,
-            'usernamecolaborador' => $request->usernamecolaborador,
-            'correocolaborador' => $request->correocolaborador,
-            'passwordcolaborador' => Hash::make($request->passwordcolaborador),
-            'passwordcolaborador_confirmation'=>$request->passwordcolaborador,
+            'name' => $request->nombrecolaborador,
+            'email' => $request->correocolaborador,
+            'password' => Hash::make($request->passwordcolaborador),
+            'password_confirmation'=>$request->passwordcolaborador,
         ]);
         
         colaboradores::create([
