@@ -15,7 +15,6 @@ class ClienteController extends Controller
 
         return view('auth.clientes')->with('clientes',$clientes);
     }
-
     public function destroy(Cliente $clientes){
         $clientes->delete();   
         return redirect()->route('clientes');
