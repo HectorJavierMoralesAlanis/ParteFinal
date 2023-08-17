@@ -12,9 +12,9 @@
                 @csrf
                 @method('put')
                 <div class="mb-5">
-                    <label for="nombreC" class="mb-2 black uppercase text-gray-500 font-bold" value="{{$clientes->nombreC}}">
+                    <label for="nombreC" class="mb-2 black uppercase text-gray-500 font-bold" value={{$clientes->nombreC}}>
+                        Nombre del cliente
                     </label>
-
                     <input
                         id="nombreC"
                         name="nombreC"
@@ -32,7 +32,7 @@
                     @enderror
                 </div>
                 <div class="mb-5">
-                    <label for="apellidoC" class="mb-2 black uppercase text-gray-500 font-bold" value='{{$clientes->apellidoC}}'>
+                    <label for="apellidoC" class="mb-2 black uppercase text-gray-500 font-bold" value={{$clientes->apellidoC}}>
                         Apellido del cliente
                     </label>
                     <input
@@ -53,7 +53,7 @@
                     @enderror
                 </div>
                 <div class="mb-5">
-                    <label for="usernameC" class="mb-2 black uppercase text-gray-500 font-bold" value="{{$clientes->username}}">
+                    <label for="usernameC" class="mb-2 black uppercase text-gray-500 font-bold" value={{$clientes->username}}>
                         Username del cliente
                     </label>
                     <input
@@ -74,7 +74,7 @@
                     @enderror
                 </div>
                 <div class="mb-5">
-                    <label for="emailC" class="mb-2 black uppercase text-gray-500 font-bold" value="{{$clientes->emailC}}">
+                    <label for="emailC" class="mb-2 black uppercase text-gray-500 font-bold" value={{$clientes->emailC}}>
                         Email del cliente
                     </label>
                     <input
@@ -137,7 +137,7 @@
                     @enderror
                 </div>
                 <div class="mb-5">
-                    <label for="telefonoC" class="mb-2 black uppercase text-gray-500 font-bold" value="{{$clientes->telefonoC}}">
+                    <label for="telefonoC" class="mb-2 black uppercase text-gray-500 font-bold" value={{$clientes->telefonoC}}>
                         Telefono del cliente
                     </label>
                     <input
@@ -158,7 +158,7 @@
                     @enderror
                 </div>
                 <div class="mb-5">
-                    <label for="compNombreC" class="mb-2 black uppercase text-gray-500 font-bold" value="{{$clientes->compNombreC}}">
+                    <label for="compNombreC" class="mb-2 black uppercase text-gray-500 font-bold" value={{$clientes->compNombreC}}>
                         Nombre de la compañia del cliente
                     </label>
                     <input
