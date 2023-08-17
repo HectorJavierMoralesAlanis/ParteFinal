@@ -8,18 +8,16 @@
     <div class="md:flex md:justify-center md:gap=10 md:items-center container mx-auto">
         <div class="md:w-4/12 bg-neutral-800 p-6 rounded-lg shadow-xl">
 
-            <form method="POST" action="{{route('cliente.update',$clientes->id )}}" novalidate>
+            <form method="POST" action="{{route('cliente.update',$clientes)}}" novalidate>
                 @csrf
                 @method('put')
                 <div class="mb-5">
                     <label for="nombreC" class="mb-2 black uppercase text-gray-500 font-bold" value="{{$clientes->nombreC}}">
-                        Nombre del cliente
                     </label>
                     <input
                         id="nombreC"
                         name="nombreC"
                         type="text"
-                        placeholder="Ingrese el nombre del cliente"
                         class="border p-2 w-full rounded tg
                         @error('nombreC')
                             border-red-500
