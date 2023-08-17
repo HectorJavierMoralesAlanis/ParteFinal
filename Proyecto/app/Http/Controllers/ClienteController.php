@@ -31,13 +31,13 @@ class ClienteController extends Controller
         #dd($clientes);
         return view('auth.clientesAct')->with("clientes",$clientes);
     }
-    
+
     public function update(Request $request,Cliente $cliente){
         $cliente->nombreC=$request->nombreC;
         $cliente->apellidoC=$request->apellidoC;
         $cliente->username=$request->username;
         $cliente->emailC=$request->emailC;
-        $cliente->pasword=$request->password;
+        $cliente->password=$request->password;
         $cliente->telefonoC=$request->telefonoC;
         $cliente->compNombreC=$request->compNombreC;
         $cliente->save();
