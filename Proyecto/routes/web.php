@@ -35,7 +35,7 @@ Route::post("/registroClientes",[RegistroCliente::class,'store']);
 Route::get('clientes/{cliente}/edit',[ClienteController::class,'edit'])->name('cliente.edit');
 Route::put('clientes/{cliente}',[ClienteController::class,'update'])->name('cliente.update');
 
-Route::delete('clientes/{cliente}',[ClienteController::class,'destroy'])->name('cliente.destroy');
+Route::get('clientes/{cliente}',[ClienteController::class,'destroy'])->name('cliente.destroy');
 //Ruta para mostrar la vista de login
 Route::get('/login',[LoginController::class,'index'])->name("login");
 //Ruta para el inicio de sesion
