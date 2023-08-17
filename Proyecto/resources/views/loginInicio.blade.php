@@ -60,8 +60,10 @@
     </div>
 </div>
     <footer class="md:flex md:justify-center md:gap-10 md:items-center">
-        <h4>Integrantes</h4>
-        <p>Alex Guillermo Castillo Nava</p>
-        <p>HectorJavierMorales Alanis</p>
+        <div>
+            <h4>Integrantes</h4><br>
+            <p>Alex Guillermo Castillo Nava</p>
+            <p>HectorJavierMorales Alanis</p>
+        </div>
     </footer>
 @endsection
