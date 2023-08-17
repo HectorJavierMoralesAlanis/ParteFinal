@@ -11,7 +11,7 @@
             <form method="POST" action="{{route('cliente.update',$clientes->id)}}" novalidate>
                 @csrf
                 @method('put')
-                
+
                 <div class="mb-5">
                     <label for="nombreC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Nombre del cliente
@@ -146,7 +146,7 @@
                         id="telefonoC"
                         name="telefonoC"
                         type="text"
-                        placeholder="{{$cliente->telefonoC}}"
+                        placeholder="{{$clientes->telefonoC}}"
                         class="border p-2 w-full rounded tg
                         @error('telefonoC')
                             border-red-500
