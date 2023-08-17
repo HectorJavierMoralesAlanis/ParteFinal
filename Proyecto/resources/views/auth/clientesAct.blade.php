@@ -12,13 +12,14 @@
                 @csrf
                 @method('put')
                 <div class="mb-5">
-                    <label for="nombreC" class="mb-2 black uppercase text-gray-500 font-bold" value={{$clientes->nombreC}}>
+                    <label for="nombreC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Nombre del cliente
                     </label>
                     <input
                         id="nombreC"
                         name="nombreC"
                         type="text"
+                        placeholder="{{$clientes->nombreC}}"
                         class="border p-2 w-full rounded tg
                         @error('nombreC')
                             border-red-500
@@ -32,14 +33,14 @@
                     @enderror
                 </div>
                 <div class="mb-5">
-                    <label for="apellidoC" class="mb-2 black uppercase text-gray-500 font-bold" value={{$clientes->apellidoC}}>
+                    <label for="apellidoC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Apellido del cliente
                     </label>
                     <input
                         id="apellidoC"
                         name="apellidoC"
                         type="text"
-                        placeholder="Ingrese el apellido del cliente"
+                        placeholder="{{$clientes->apellidoC}}"
                         class="border p-2 w-full rounded tg
                         @error('apellidoC')
                             border-red-500
@@ -53,14 +54,14 @@
                     @enderror
                 </div>
                 <div class="mb-5">
-                    <label for="usernameC" class="mb-2 black uppercase text-gray-500 font-bold" value={{$clientes->username}}>
+                    <label for="usernameC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Username del cliente
                     </label>
                     <input
                         id="usernameC"
                         name="usernameC"
                         type="text"
-                        placeholder="Ingrese el username del cliente"
+                        placeholder="{{$clientes->username}}"
                         class="border p-2 w-full rounded tg
                         @error('usernameC')
                             border-red-500
@@ -73,16 +74,15 @@
                         </p>
                     @enderror
                 </div>
-                
                 <div class="mb-5">
                     <label for="emailC" class="mb-2 black uppercase text-gray-500 font-bold">
-                        {{$clientes->emailC}}
+                        Email del cliente
                     </label>
                     <input
                         id="emailC"
                         name="emailC"
                         type="email"
-                        placeholder="Ingrese el correo del cliente"
+                        placeholder="{{$clientes->emailC}}
                         class="border p-2 w-full rounded tg
                         @error('emailC')
                             border-red-500
@@ -138,14 +138,14 @@
                     @enderror
                 </div>
                 <div class="mb-5">
-                    <label for="telefonoC" class="mb-2 black uppercase text-gray-500 font-bold" value={{$clientes->telefonoC}}>
+                    <label for="telefonoC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Telefono del cliente
                     </label>
                     <input
                         id="telefonoC"
                         name="telefonoC"
                         type="text"
-                        placeholder="Ingrese el telefono del cliente"
+                        placeholder="{{$cliente->telefonoC}}"
                         class="border p-2 w-full rounded tg
                         @error('telefonoC')
                             border-red-500
@@ -159,14 +159,14 @@
                     @enderror
                 </div>
                 <div class="mb-5">
-                    <label for="compNombreC" class="mb-2 black uppercase text-gray-500 font-bold" value={{$clientes->compNombreC}}>
+                    <label for="compNombreC" class="mb-2 black uppercase text-gray-500 font-bold">
                         Nombre de la compañia del cliente
                     </label>
                     <input
                         id="compNombreC"
                         name="compNombreC"
                         type="text"
-                        placeholder="Ingrese el nombre de la compañia del cliente"
+                        placeholder="{{$clientes->comNombreC}}"
                         class="border p-2 w-full rounded tg
                         @error('compNombreC')
                             border-red-500
