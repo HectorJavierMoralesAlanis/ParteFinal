@@ -25,4 +25,9 @@ class colaboradores extends Model
     protected $hidden = [
         'password'
     ];
+
+    public function proyectos(){
+        return $this->hasMany(proyectos::class);
+    }
+
 }

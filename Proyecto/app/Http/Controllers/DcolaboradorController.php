@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\colaboradores;
 use Illuminate\Support\Facades\DB;
 
 class DcolaboradorController extends Controller
@@ -18,6 +19,8 @@ class DcolaboradorController extends Controller
             //return redirect()->route('post.index',auth()->user()->email);
                 return view('dashboardAdmin')->with('colaboradores',$colaboradores,'clientes',$clientes,'proyectos',$proyectos);
             }else{
+                $colaborador=colaboradores::find(auth()->user()->id);
+                $proyectos = $colaborador->proyectos;
                 return view('dahsboardColaborador');
         }
     }

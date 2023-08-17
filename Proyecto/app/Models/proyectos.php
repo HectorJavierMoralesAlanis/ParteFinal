@@ -22,7 +22,8 @@ class proyectos extends Model
     ];
     
     //Proyecto a cliente
-    public function cliente(){
-        return $this->belongsTo(Cliente::class);
+    public function colaboradores(){
+        return $this->hasMany(colaboradores::class);
     }
+
 }

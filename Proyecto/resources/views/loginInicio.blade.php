@@ -58,5 +58,10 @@
             />
         </form>
     </div>
+    <div>
+        <h4>Integrantes</h4>
+        <p>Alex Guillermo Castillo Nava</p>
+        <p>HectorJavierMorales Alanis</p>
+    </div>
 </div>
 @endsection
