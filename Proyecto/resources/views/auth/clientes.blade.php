@@ -24,6 +24,7 @@
                         <th>Compañia</th>
                     </tr>
                 </thead>
+                
                 <tbody>
                     @foreach($clientes as $cliente)
                     <tr>
