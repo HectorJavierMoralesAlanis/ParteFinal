@@ -40,6 +40,7 @@ class CrearColaboradorController extends Controller
             'password' => Hash::make($request->passwordcolaborador),
             'password_confirmation'=>$request->passwordcolaborador,
         ]);
+        
         colaboradores::create([
             'nombrecolaborador' => $request->nombrecolaborador,
             'apellidocolaborador' => $request->apellidocolaborador,
