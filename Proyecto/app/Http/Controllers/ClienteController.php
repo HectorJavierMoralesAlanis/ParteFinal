@@ -15,8 +15,9 @@ class ClienteController extends Controller
 
         return view('auth.clientes')->with('clientes',$clientes);
     }
-    public function destroy(Cliente $clientes){
+    public function destroy(Cliente $clientes,$id){
         $clientesDB = DB::table('clientes')->get();
+        $clientes= $clientesDB[$id];
         $clientes->delete();   
         return redirect()->route('clientes');
     }
