@@ -63,7 +63,7 @@
         <div class="bg-white">
             <h4>Integrantes</h4><br>
             <p>Alex Guillermo Castillo Nava</p>
-            <p>HectorJavierMorales Alanis</p>
+            <p>Hector Javier Morales Alanis</p>
         </div>
     </footer>
 @endsection
