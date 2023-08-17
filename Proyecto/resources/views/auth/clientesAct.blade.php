@@ -12,7 +12,7 @@
                 @csrf
                 @method('put')
                 <div class="mb-5">
-                    <label for="nombreC" class="mb-2 black uppercase text-gray-500 font-bold" value="{{$clientes->nomrbeC}}">
+                    <label for="nombreC" class="mb-2 black uppercase text-gray-500 font-bold" value="{{$clientes->nombreC}}">
                         Nombre del cliente
                     </label>
                     <input
