@@ -27,7 +27,6 @@
                 <tbody>
                     @foreach($clientes as $cliente)
                     <tr>
-
                         <td>{{$cliente->id}}</td>
                         <td>{{$cliente->nombreC}}</td>
                         <td>{{$cliente->telefonoC}}</td>
