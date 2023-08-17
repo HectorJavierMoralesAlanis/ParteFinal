@@ -60,7 +60,7 @@
                     </label>
                     <input
                         id="usernameC"
-                        name="usernameC"
+                        name="username"
                         type="text"
                         placeholder="{{$clientes->username}}"
                         class="border p-2 w-full rounded tg
