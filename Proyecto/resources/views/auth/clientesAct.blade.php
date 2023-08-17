@@ -74,8 +74,8 @@
                     @enderror
                 </div>
                 <div class="mb-5">
-                    <label for="emailC" class="mb-2 black uppercase text-gray-500 font-bold" value={{$clientes->emailC}}>
-                        Email del cliente
+                    <label for="emailC" class="mb-2 black uppercase text-gray-500 font-bold">
+                        {{$clientes->emailC}}
                     </label>
                     <input
                         id="emailC"
