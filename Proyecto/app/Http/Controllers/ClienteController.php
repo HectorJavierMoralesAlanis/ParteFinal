@@ -22,4 +22,20 @@ class ClienteController extends Controller
         $clientes->delete();   
         return redirect()->route('clientes');
     }
+
+    public function edit(Cliente $cliente){
+        return view('auth.clienteAct',compact($cliente));
+    }
+
+    public function update(Request $request,Cliente $cliente){
+        $cliente->nombreC=$request->nombreC;
+        $cliente->apellidoC=$request->apellidoC;
+        $cliente->username=$request->username;
+        $cliente->emailC=$request->emailC;
+        $cliente->pasword=$request->passwordC;
+        $cliente->telefonoC=$request->telefonoC;
+        $cliente->compNombreC=$request->compNombreC;
+        $cliente->save();
+        return redirect()->route('clientes');
+    }
 }
