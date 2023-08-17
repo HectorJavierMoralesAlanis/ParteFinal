@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 class ClienteController extends Controller
 {
     //
+    
     public function index(){
         
         $clientes = DB::table('clientes')->get();
@@ -19,5 +20,5 @@ class ClienteController extends Controller
         $cliente->delete();   
         return redirect()->route('clientes');
     }
-    
+
 }
