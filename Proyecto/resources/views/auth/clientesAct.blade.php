@@ -14,6 +14,7 @@
                 <div class="mb-5">
                     <label for="nombreC" class="mb-2 black uppercase text-gray-500 font-bold" value="{{$clientes->nombreC}}">
                     </label>
+                    
                     <input
                         id="nombreC"
                         name="nombreC"
