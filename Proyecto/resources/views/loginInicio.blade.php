@@ -60,7 +60,7 @@
     </div>
 </div>
     <footer class="md:flex md:justify-center md:gap-10 md:items-center">
-        <div clas="bg-white">
+        <div class="bg-white">
             <h4>Integrantes</h4><br>
             <p>Alex Guillermo Castillo Nava</p>
             <p>HectorJavierMorales Alanis</p>
