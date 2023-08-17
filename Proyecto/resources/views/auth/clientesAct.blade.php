@@ -8,7 +8,7 @@
     <div class="md:flex md:justify-center md:gap=10 md:items-center container mx-auto">
         <div class="md:w-4/12 bg-neutral-800 p-6 rounded-lg shadow-xl">
 
-            <form method="POST" action="{{route('cliente.update',$clientes->id)}}" novalidate>
+            <form method="POST" action="{{route('cliente.update',$clientes->id )}}" novalidate>
                 @csrf
                 @method('put')
                 <div class="mb-5">
