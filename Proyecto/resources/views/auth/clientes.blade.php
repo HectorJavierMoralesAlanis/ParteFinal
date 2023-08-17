@@ -25,6 +25,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    
                     @foreach($clientes as $cliente)
                     <tr>
                         <td>{{$cliente->id}}</td>
